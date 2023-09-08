@@ -67,6 +67,7 @@ export const projectsData = [
       "I worked as a full-stack developer with 6 more students for 3 intense weeks on Henry's bootcamp. Users can search and buy tickets for events and organizations can create their own .",
     tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Sequelize", "jwt"],
     imageUrl: corpcommentImg,
+    url: 'https://hyperevent-fe.vercel.app'
   },
   {
     title: "Admin Dashboard",
@@ -74,6 +75,7 @@ export const projectsData = [
       "This is a follow-up project for Hyper-Event. The admin can look revenues, manage users, events and more ",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
     imageUrl: rmtdevImg,
+    url: 'https://hyper-admin-sigma.vercel.app'
   },
   {
     title: "Freak-Games",
@@ -81,6 +83,7 @@ export const projectsData = [
       "On this project I put to practice all the skills learned at Henry for the first time. Users can search info about more than 500.000 videogames",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    url:'https://freak-games.vercel.app'
   },
 ] as const;
 
