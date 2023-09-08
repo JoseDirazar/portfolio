@@ -62,23 +62,23 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Hyper-Event",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I worked as a full-stack developer with 6 more students for 3 intense weeks on Henry's bootcamp. Users can search and buy tickets for events and organizations can create their own .",
+    tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Sequelize", "jwt"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Admin Dashboard",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "This is a follow-up project for Hyper-Event. The admin can look revenues, manage users, events and more ",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Freak-Games",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "On this project I put to practice all the skills learned at Henry for the first time. Users can search info about more than 500.000 videogames",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
@@ -95,13 +95,9 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "Prisma",
-  "MongoDB",
+  'Sequelize',
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;

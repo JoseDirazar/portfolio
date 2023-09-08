@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-/* import SectionHeading from "./section-heading"; */
+import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 /* import { useSectionInView } from "@/lib/hooks"; */
 
@@ -17,18 +17,18 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
- {/*      <SectionHeading>About me</SectionHeading> */}
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
+        After studying 4 years {" "}
+        <span className="font-medium">Accounting at UNICEN</span>, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
+        feeling of finally figuring out a solution to a problem and learn more every day. My core stack
         is{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, Sequelize and SQL
+          React, Next.js, Express, Sequelize and SQL
         </span>
         . I am also familiar with TypeScript and Prisma. I am always looking to
         learn new technologies. I am currently looking for a{" "}
@@ -37,9 +37,8 @@ export default function About() {
       </p>
 
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
+        <span className="italic">When I&apos;m not coding</span>, I enjoy researching new trending tecnologies and staying update in the <span className="font-medium">tech</span> scene  {" "}
+        . I am currently
         learning more about{" "}
         <span className="font-medium">TypeScript</span>. I&apos;m also like to play guitar, which is my pasion for many years now.
       </p>
