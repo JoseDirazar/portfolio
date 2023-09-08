@@ -9,6 +9,7 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <About />
+      <h2 className="text-4xl">Building in progress...</h2>
     </main>
   );
 }
