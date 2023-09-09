@@ -36,27 +36,27 @@ export const links = [
 export const experiencesData = [
   {
     title: "Graduated bootcamp",
-    location: "Miami, FL",
+    location: "Buenos Aires, ARG",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 6 months of studying. Puting all the theory to practice every day.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Sep - 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Bootcamp final project",
+    location: "Remote, Henry",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a FullStack developer for one month with 6 more students, learning how to work with scrum in a team. I also aquire more skills during the process.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Oct - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Personal project",
+    location: "Remote, Henry",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "For the first time as student I put the full stack learned on the bootcamp to make Freak-Games.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Mar to Jul - 2023",
   },
 ] as const;
 
@@ -81,7 +81,7 @@ export const projectsData = [
     title: "Freak-Games",
     description:
       "On this project I put to practice all the skills learned at Henry for the first time. Users can search info about more than 500.000 videogames",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React", "ViteJS", "SQL", 'Sequelize', "CSS Modules", "Redux"],
     imageUrl: wordanalyticsImg,
     url:'https://freak-games.vercel.app'
   },
