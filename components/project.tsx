@@ -50,7 +50,7 @@ export default function Project({
           </ul>
         </div>
 
-        <Link href={url}>
+        <Link href={url} target="_blank">
         <Image
           src={imageUrl}
           alt="Project I worked on"
