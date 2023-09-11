@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "Graduated bootcamp",
     location: "Buenos Aires, ARG",
     description:
-      "I graduated after 6 months of studying. Puting all the theory to practice every day.",
+      "I graduated after an intensive 6-month bootcamp, putting all the theory into practice every day.",
     icon: React.createElement(LuGraduationCap),
     date: "Sep - 2023",
   },
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Bootcamp final project",
     location: "Remote, Henry",
     description:
-      "I worked as a FullStack developer for one month with 6 more students, learning how to work with scrum in a team. I also aquire more skills during the process.",
+      "I worked as a FullStack developer for one month with 6 more colleagues, learning how to work with scrum on a team. I also learned a lot more, like libreries and new stacks",
     icon: React.createElement(CgWorkAlt),
     date: "Oct - 2023",
   },
@@ -64,7 +64,7 @@ export const projectsData = [
   {
     title: "Hyper-Event",
     description:
-      "I worked as a full-stack developer with 6 more students for 3 intense weeks on Henry's bootcamp. Users can search and buy tickets for events and organizations can create their own .",
+      "I worked as a full-stack developer with 6 more students for 3 intense weeks at Henry's bootcamp. Users can search and buy tickets for events and organizations can create their own.",
     tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Sequelize", "jwt"],
     imageUrl: corpcommentImg,
     url: 'https://hyperevent-fe.vercel.app'
@@ -72,7 +72,7 @@ export const projectsData = [
   {
     title: "Admin Dashboard",
     description:
-      "This is a follow-up project for Hyper-Event. The admin can look revenues, manage users, events and more ",
+      "This is a follow-up project for Hyper-Event. The admin can look revenues, manage users, events and more.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
     imageUrl: rmtdevImg,
     url: 'https://hyper-admin-sigma.vercel.app'
@@ -81,7 +81,7 @@ export const projectsData = [
     title: "Freak-Games",
     description:
       "On this project I put to practice all the skills learned at Henry for the first time. Users can search info about more than 500.000 videogames",
-    tags: ["React", "ViteJS", "SQL", 'Sequelize', "CSS Modules", "Redux"],
+    tags: ["React", "ViteJS", "SQL", 'Sequelize', "CSS Modules", "Redux", 'PostgreSQL'],
     imageUrl: wordanalyticsImg,
     url:'https://freak-games.vercel.app'
   },
