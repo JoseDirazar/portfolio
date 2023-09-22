@@ -33,11 +33,11 @@ export default function Intro() {
             <Image
               src="https://media.licdn.com/dms/image/D4D03AQFAxr869Glt1g/profile-displayphoto-shrink_800_800/0/1695416361331?e=1700697600&v=beta&t=H-5U8kIBVe7WA-mDfRA64OiyvnW5WbU404QHiArDcvA"
               alt="Ricardo portrait"
-              width="192"
-              height="192"
+              width="129"
+              height="129"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-auto w-auto rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
