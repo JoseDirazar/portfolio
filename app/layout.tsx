@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Jose | portfolio",
-  description: "I'm a full-stack developer whith scrum experience.",
+  description: "I'm a full-stack developer and love NextJS.",
 };
 
 export default function RootLayout({
