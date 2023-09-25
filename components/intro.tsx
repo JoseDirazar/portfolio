@@ -32,17 +32,17 @@ export default function Intro() {
           >
             <Image
               src="https://media.licdn.com/dms/image/D4D03AQFAxr869Glt1g/profile-displayphoto-shrink_800_800/0/1695416361331?e=1700697600&v=beta&t=H-5U8kIBVe7WA-mDfRA64OiyvnW5WbU404QHiArDcvA"
-              alt="Ricardo portrait"
-              width="129"
-              height="129"
+              alt="Jose portrait"
+              width="192"
+              height="192"
               quality="95"
               priority={true}
-              className="h-auto w-auto rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-44 w-44 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-4 right-2 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -62,11 +62,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-     <span className="font-bold">Hello, I&apos;m Joseph.</span> I&apos;m a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">scrum</span> experience and enjoy building{" "}
-        <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">Hello, I&apos;m Joseph.</span> I&apos;m a{" "}
+        <span className="font-bold">full-stack developer</span> with experience
+        working on <span className="font-bold">projects</span>, and enjoy
+        building <span className="italic">sites & apps</span>. My focus is{" "}
+        <span className="underline">NextJS with TypeScript</span>.
       </motion.h1>
 
       <motion.div
