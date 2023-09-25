@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Bootcamp final project",
     location: "Remote, Henry",
     description:
-      "I worked as a FullStack developer for one month with 6 more colleagues, learning how to work with scrum on a team. I also learned a lot more, like libreries and new stacks",
+      "I worked as a FullStack developer for one month with 6 more colleagues, learning how to scale our App using scrum agile method. I also learned a lot more api, libreries and new stacks",
     icon: React.createElement(CgWorkAlt),
     date: "Oct - 2023",
   },
