@@ -103,4 +103,5 @@ export const skillsData = [
   "Express",
   "PostgreSQL",
   "Framer Motion",
+  "Nest.JS"
 ] as const;
