@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import BelliDeportes from "@/public/BelliDeportes.png"
+import personalDashboard from "@/public/perosonalDashboard.png"
 
 export const links = [
   {
@@ -35,6 +37,13 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Freeancer",
+    location: "Buenos Aires, ARG",
+    description: "I'm currently working for clients which needs an App for their business in order to expand it beyond their city",
+    icon: React.createElement(CgWorkAlt),
+    date: "Since Nov -2023"
+  },
+  {
     title: "Graduated bootcamp",
     location: "Buenos Aires, ARG",
     description:
@@ -61,6 +70,20 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Belli Deportes",
+    description: "An e-commerce for an sport store located in my city. User can search products, buy and pay with MercadoPago",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
+    imageUrl: BelliDeportes,
+    url: "https://belli-deportes.vercel.app/"
+  },
+  {
+    title: "Personal Dashboard",
+    description: "A robust backend designed to manage my clients various e-commerce platforms in an automated manner. As an administrator, I can create new stores and modify any content on my clients pages.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
+    imageUrl: personalDashboard,
+    url: "/"
+  },
   {
     title: "Hyper-Event",
     description:

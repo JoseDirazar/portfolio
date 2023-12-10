@@ -19,25 +19,32 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After studying 4 years {" "}
-        <span className="font-medium">Accounting at UNICEN</span>, I decided to pursue my
-        passion for programming and enroll in a coding bootcamp learning the current trends on the market to develop {" "}
+        After studying 4 years{" "}
+        <span className="font-medium">Accounting at UNICEN</span>, I decided to
+        pursue my passion for programming and enroll in a coding bootcamp
+        learning the current trends on the market to develop{" "}
         <span className="font-medium">full stack Apps</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem and learn more every day. My core stack
-        is{" "}
+        feeling of finally figuring out a solution to a problem and learn more
+        every day. My core stack is{" "}
         <span className="font-medium">
           React, Next.js, Express, Sequelize and SQL
-        </span>. I am also familiar with TypeScript and Prisma, and
-         always looking to learn new technologies like: Nest.js, Bun, Astro, MongoDB. Currently I&apos;m looking for a{" "}
+        </span>
+        . I am also familiar with TypeScript and Prisma, and I am always looking
+        forward for new technologies like: Nest.js, Bun, Astro, MongoDB.
+        Currently I&apos;m looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
-        developer.
+        developer. Meanwhile I am developing apps for clients in need for an
+        online solution, improving my skills by solving their needs depending of
+        their jobs activity
       </p>
 
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy researching new trending tecnologies and staying update in the <span className="font-medium">tech</span> scene  {" "}
-        . Check out the next section
+        <span className="italic">When I&apos;m not coding</span>, I enjoy
+        researching new trending tecnologies and staying update in the{" "}
+        <span className="font-medium">tech</span> scene . Check out the next
+        section
         <span className="font-medium">!</span>.
       </p>
     </motion.section>
