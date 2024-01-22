@@ -7,6 +7,7 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import BelliDeportes from "@/public/BelliDeportes.png"
 import personalDashboard from "@/public/perosonalDashboard.png"
+import multicuotasTandil from "@/public/multicuotas-tandil.png"
 
 export const links = [
   {
@@ -41,7 +42,7 @@ export const experiencesData = [
     location: "Buenos Aires, ARG",
     description: "I'm currently working for clients which needs an App for their business in order to expand it beyond their city",
     icon: React.createElement(CgWorkAlt),
-    date: "Since Nov -2023"
+    date: "Since Nov - 2023"
   },
   {
     title: "Graduated bootcamp",
@@ -71,6 +72,13 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "MULTICUOTAS Tandíl",
+    description: "An e-commerce for a client store located in Tandíl. User can search products, buy and pay with MercadoPago",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
+    imageUrl: multicuotasTandil,
+    url: "https://multicuotas-tandil.vercel.app/"
+  },
+  {
     title: "Belli Deportes",
     description: "An e-commerce for an sport store located in my city. User can search products, buy and pay with MercadoPago",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
@@ -91,14 +99,6 @@ export const projectsData = [
     tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Sequelize", "jwt"],
     imageUrl: corpcommentImg,
     url: 'https://hyperevent-fe.vercel.app'
-  },
-  {
-    title: "Admin Dashboard",
-    description:
-      "This is a follow-up project for Hyper-Event. The admin can look revenues, manage users, events and more.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
-    imageUrl: rmtdevImg,
-    url: 'https://hyper-admin-sigma.vercel.app'
   },
   {
     title: "Freak-Games",
