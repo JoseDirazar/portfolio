@@ -68,6 +68,7 @@ export const experiencesData = [
     description:
       "Henry is a intensive bootcamp where I learned the fundamentals of modern Full Stack development with React, Node.js, Express and PostgreSQL. Also learned about testing, best practices and learned how to work in a team with Scrum, Git and GitHub.",
     icon: React.createElement(LuGraduationCap),
+    date: "Apr - 2023 - Sep - 2023",
     url: "https://certificates.soyhenry.com/new-cert?id=2ca8a03c45ac77da0e6ddb9ccb624fdfe0a3b3c73bed6be0413138c267683122",
   },
   {
@@ -77,6 +78,7 @@ export const experiencesData = [
       "FreeCodeCamp is a online platform where I learned the fundamentals of web development with HTML, CSS and advance JavaScript algorithms.",
     icon: React.createElement(LuGraduationCap),
     url: "https://www.freecodecamp.org/certification/fcce44b564a-4071-40f3-a9b8-537a761d8ec5/javascript-algorithms-and-data-structures",
+    date: "Nov - 2022 - Apr - 2023",
   },
 ] as const;
 
