@@ -1,13 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-import BelliDeportes from "@/public/BelliDeportes.png"
-import personalDashboard from "@/public/perosonalDashboard.png"
-import multicuotasTandil from "@/public/multicuotas-tandil.png"
+import BelliDeportes from "@/public/BelliDeportes.png";
+import multicuotasTandil from "@/public/multicuotas-tandil.png";
+import tuBienestar from "@/public/tu-bienestar.png";
+import padelink from "@/public/padelink.png";
 
 export const links = [
   {
@@ -38,93 +36,93 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Freeancer",
-    location: "Buenos Aires, ARG",
-    description: "I'm currently working for clients which needs an App for their business in order to expand it beyond their city",
-    icon: React.createElement(CgWorkAlt),
-    date: "Since Nov - 2023"
-  },
-  {
-    title: "Graduated bootcamp",
+    title: "ForgeBytes Lab",
     location: "Buenos Aires, ARG",
     description:
-      "I graduated after an intensive 6-month bootcamp, putting all the theory into practice every day.",
+      "ForgeBytes Lab is my personal VPS where I develop and host client's projects.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Since Jan - 2025",
+    url: "https://forgebyteslab.com/",
+  },
+  {
+    title: "Bigger Tech",
+    location: "Remote, Argentina",
+    description:
+      "Bigger Tech is a company that provides IT services to small and medium-sized businesses. I'm currently work as a Full Stack Developer making web and mobile apps for Bigger clients.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Since Dec - 2023",
+    url: "https://www.biggertech.co/",
+  },
+  {
+    title: "Mayland Labs",
+    location: "Buenos Aires, ARG",
+    description:
+      "Mayland labs is a small statup that provides IT services to small and medium-sized businesses located in Argentina.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Since Nov - 2023",
+    url: "https://www.maylandlabs.com/",
+  },
+  {
+    title: "Henry Bootcamp",
+    location: "Argentina, remote",
+    description:
+      "Henry is a intensive bootcamp where I learned the fundamentals of modern Full Stack development with React, Node.js, Express and PostgreSQL. Also learned about testing, best practices and learned how to work in a team with Scrum, Git and GitHub.",
     icon: React.createElement(LuGraduationCap),
-    date: "Sep - 2023",
+    url: "https://certificates.soyhenry.com/new-cert?id=2ca8a03c45ac77da0e6ddb9ccb624fdfe0a3b3c73bed6be0413138c267683122",
   },
   {
-    title: "Bootcamp final project",
-    location: "Remote, Henry",
+    title: "FreeCodeCamp",
+    location: "Argentina, remoto",
     description:
-      "I worked as a FullStack developer for one month with 6 more colleagues, learning how to scale our App using scrum agile method. I also learned a lot more: api, libreries and new stacks",
-    icon: React.createElement(CgWorkAlt),
-    date: "Oct - 2023",
-  },
-  {
-    title: "Personal project",
-    location: "Remote, Henry",
-    description:
-      "For the first time as student I put the full stack learned on the bootcamp to make Freak-Games.",
-    icon: React.createElement(FaReact),
-    date: "Mar to Jul - 2023",
+      "FreeCodeCamp is a online platform where I learned the fundamentals of web development with HTML, CSS and advance JavaScript algorithms.",
+    icon: React.createElement(LuGraduationCap),
+    url: "https://www.freecodecamp.org/certification/fcce44b564a-4071-40f3-a9b8-537a761d8ec5/javascript-algorithms-and-data-structures",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "MULTICUOTAS Tandíl",
-    description: "An e-commerce for a client store located in Tandíl. User can search products, buy and pay with MercadoPago",
+    title: "TuBienestar Masajes Olavarría",
+    description:
+      "This is a booking platform for a massage salon located in Olavarría, Argentina.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
+    imageUrl: tuBienestar,
+    url: "https://tu-bienestar.forgebyteslab.com/",
+  },
+  {
+    title: "Padelink",
+    description:
+      "This is a social media platform for a peddle club located in Buenos Aires C.A.B.A, Argentina.",
+    tags: ["React", "TypeScript", "Nest.js", "Tailwind", "TypeORM", "Vite.js"],
+    imageUrl: padelink,
+    url: "https://www.padelink.com.ar/",
+  },
+  {
+    title: "Multicuotas Tandíl",
+    description:
+      "An e-commerce for a client store located in Tandíl. User can search products, order and pay with MercadoPago",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
     imageUrl: multicuotasTandil,
-    url: "https://multicuotas-tandil.vercel.app/"
+    url: "https://multicuotas-tandil.vercel.app/",
   },
   {
     title: "Belli Deportes",
-    description: "An e-commerce for an sport store located in my city. User can search products, buy and pay with MercadoPago",
+    description:
+      "An e-commerce for an sport store located in my city. User can search products, order and pay with MercadoPago",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
     imageUrl: BelliDeportes,
-    url: "https://belli-deportes.vercel.app/"
-  },
-  {
-    title: "Personal Dashboard",
-    description: "A robust backend designed to manage my clients various e-commerce platforms in an automated manner. As an administrator, I can create new stores and modify any content on my clients pages.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
-    imageUrl: personalDashboard,
-    url: "/"
-  },
-  {
-    title: "Hyper-Event",
-    description:
-      "I worked as a full-stack developer with 6 more students for 3 intense weeks at Henry's bootcamp. Users can search and buy tickets for events and organizations can create their own.",
-    tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Sequelize", "jwt"],
-    imageUrl: corpcommentImg,
-    url: 'https://hyperevent-fe.vercel.app'
-  },
-  {
-    title: "Freak-Games",
-    description:
-      "On this project I put to practice all the skills learned at Henry for the first time. Users can search info about more than 500.000 videogames",
-    tags: ["React", "ViteJS", "SQL", 'Sequelize', "CSS Modules", "Redux", 'PostgreSQL'],
-    imageUrl: wordanalyticsImg,
-    url:'https://freak-games.vercel.app'
+    url: "https://belli-deportes.vercel.app/",
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
   "TypeScript",
   "React",
+  "Expo",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  'Sequelize',
-  "Redux",
-  "Express",
-  "PostgreSQL",
-  "Framer Motion",
-  "Nest.JS"
+  "ORMs",
+  "SQL",
+  "Nest.js",
 ] as const;
