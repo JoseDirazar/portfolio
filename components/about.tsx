@@ -25,7 +25,7 @@ export default function About() {
         learning the current trends on the market to develop{" "}
         <span className="font-medium">full stack Apps</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
+        problem solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem and learn more
         every day. My core stack is{" "}
         <span className="font-medium">React and Next.js</span> for the frontend
@@ -36,7 +36,7 @@ export default function About() {
       <p>
         <span className="italic">When I&apos;m not coding</span>, I enjoy
         researching new trending tecnologies and staying update in the{" "}
-        <span className="font-medium">tech</span> scene . Check out next section{" "}
+        <span className="font-medium">tech</span> scene. Check out next section{" "}
         <span className="font-medium">👇</span>.
       </p>
     </motion.section>
