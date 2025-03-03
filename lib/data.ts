@@ -1,12 +1,38 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import {
+  SiAmazon,
+  SiCloudflare,
+  SiCss3,
+  SiDocker,
+  SiExpo,
+  SiExpress,
+  SiHtml5,
+  SiJavascript,
+  SiMysql,
+  SiNestjs,
+  SiNextdotjs,
+  SiNginx,
+  SiPostgresql,
+  SiPrisma,
+  SiReact,
+  SiRust,
+  SiSequelize,
+  SiSqlite,
+  SiStellar,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
+  SiVite,
+  SiTypeorm,
+} from "react-icons/si";
+
 import BelliDeportes from "@/public/BelliDeportes.png";
 import multicuotasTandil from "@/public/multicuotas-tandil.png";
 import tuBienestar from "@/public/tu-bienestar.png";
 import padelink from "@/public/padelink.png";
-
+import forgebyteslab from "@/public/forgebyteslab.png";
 export const links = [
   {
     name: "Home",
@@ -84,10 +110,17 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "ForgeBytes Lab",
+    description: "This is the landing page for ForgeBytes Lab.",
+    tags: ["React", "TypeScript", "Vite.js", "TailwindCss"],
+    imageUrl: forgebyteslab,
+    url: "https://forgebyteslab.com/",
+  },
+  {
     title: "TuBienestar Masajes Olavarría",
     description:
-      "This is a booking platform for a massage salon located in Olavarría, Argentina.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
+      "This is a booking platform for a massage salon located in Olavarría, Buenos Aires, Argentina.",
+    tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
     imageUrl: tuBienestar,
     url: "https://tu-bienestar.forgebyteslab.com/",
   },
@@ -95,7 +128,14 @@ export const projectsData = [
     title: "Padelink",
     description:
       "This is a social media platform for a peddle club located in Buenos Aires C.A.B.A, Argentina.",
-    tags: ["React", "TypeScript", "Nest.js", "Tailwind", "TypeORM", "Vite.js"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Nest.js",
+      "TailwindCss",
+      "TypeORM",
+      "Vite.js",
+    ],
     imageUrl: padelink,
     url: "https://www.padelink.com.ar/",
   },
@@ -103,7 +143,7 @@ export const projectsData = [
     title: "Multicuotas Tandíl",
     description:
       "An e-commerce for a client store located in Tandíl. User can search products, order and pay with MercadoPago",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
+    tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
     imageUrl: multicuotasTandil,
     url: "https://multicuotas-tandil.vercel.app/",
   },
@@ -111,20 +151,60 @@ export const projectsData = [
     title: "Belli Deportes",
     description:
       "An e-commerce for an sport store located in my city. User can search products, order and pay with MercadoPago",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma"],
+    tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
     imageUrl: BelliDeportes,
     url: "https://belli-deportes.vercel.app/",
   },
 ] as const;
 
-export const skillsData = [
-  "TypeScript",
-  "React",
-  "Expo",
-  "Next.js",
-  "Git",
-  "Tailwind",
-  "ORMs",
-  "SQL",
-  "Nest.js",
+export const languajes = [
+  { title: "TypeScript", icon: React.createElement(SiTypescript) },
+  { title: "JavaScript", icon: React.createElement(SiJavascript) },
+  { title: "HTML", icon: React.createElement(SiHtml5) },
+  { title: "CSS", icon: React.createElement(SiCss3) },
+  { title: "SQL", icon: React.createElement(SiMysql) },
+  { title: "Rust", icon: React.createElement(SiRust) },
+];
+export const frontendSkills = [
+  { title: "React", icon: React.createElement(SiReact) },
+  { title: "Next.js", icon: React.createElement(SiNextdotjs) },
+  { title: "TailwindCSS", icon: React.createElement(SiTailwindcss) },
+  { title: "Vite", icon: React.createElement(SiVite) },
+  { title: "React Native", icon: React.createElement(SiReact) },
+  { title: "Expo", icon: React.createElement(SiExpo) },
 ] as const;
+
+export const backendSkills = [
+  { title: "Express js", icon: React.createElement(SiExpress) },
+  { title: "Nest.js", icon: React.createElement(SiNestjs) },
+  { title: "Rocket.rs", icon: React.createElement(SiRust) },
+  { title: "Stellar Smart Contracts", icon: React.createElement(SiStellar) },
+];
+
+export const databaseSkills = [
+  { title: "Prisma", icon: React.createElement(SiPrisma) },
+  { title: "Sequelize", icon: React.createElement(SiSequelize) },
+  { title: "TypeORM", icon: React.createElement(SiTypeorm) },
+  { title: "PostgreSQL", icon: React.createElement(SiPostgresql) },
+  { title: "MySQL", icon: React.createElement(SiMysql) },
+  { title: "SQLite", icon: React.createElement(SiSqlite) },
+];
+
+export const devOpsSkills = [
+  { title: "Docker", icon: React.createElement(SiDocker) },
+  { title: "Nginx", icon: React.createElement(SiNginx) },
+  {
+    title: "Coolify",
+    icon: React.createElement("img", {
+      src: "/coolify.svg",
+      className: "w-8 h-8",
+      alt: "Coolify",
+      width: 32,
+      height: 32,
+      id: "coolify",
+    }),
+  },
+  { title: "Vercel", icon: React.createElement(SiVercel) },
+  { title: "S3 backups", icon: React.createElement(SiAmazon) },
+  { title: "DNS configurations", icon: React.createElement(SiCloudflare) },
+];

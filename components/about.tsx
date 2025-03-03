@@ -28,24 +28,16 @@ export default function About() {
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem and learn more
         every day. My core stack is{" "}
-        <span className="font-medium">
-          React, Next.js, Express, Sequelize and SQL
-        </span>
-        . I am also familiar with TypeScript and Prisma, and I am always looking
-        forward for new technologies like: Nest.js, Bun, Astro, MongoDB.
-        Currently I&apos;m looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer. Meanwhile I am developing apps for clients in need for an
-        online solution, improving my skills by solving their needs depending of
-        their jobs activity
+        <span className="font-medium">React and Next.js</span> for the frontend
+        and <span className="font-medium">Nest.js</span> on the backend . I am
+        also familiar with Rust and build smart contracts on Stellar network.
       </p>
 
       <p>
         <span className="italic">When I&apos;m not coding</span>, I enjoy
         researching new trending tecnologies and staying update in the{" "}
-        <span className="font-medium">tech</span> scene . Check out the next
-        section
-        <span className="font-medium">!</span>.
+        <span className="font-medium">tech</span> scene . Check out next section{" "}
+        <span className="font-medium">👇</span>.
       </p>
     </motion.section>
   );
