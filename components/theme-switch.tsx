@@ -2,21 +2,19 @@
 
 import { useState, useEffect } from "react";
 import SwitchThemeButton from "./switch-theme-button";
+import { useTheme } from "next-themes";
 
 export default function ThemeSwitch() {
-  const [isMounted, setIsMounted] = useState(false);
+  const { setTheme, theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
+    setMounted(true);
   }, []);
-
-  if (!isMounted) {
-    return null;
-  }
-
+  if (!mounted) return null;
   return (
     <div className="fixed bottom-5 right-5 w-[3rem] h-[3rem] shadow-2xl flex items-center justify-center">
-      <SwitchThemeButton />
+      <SwitchThemeButton resolvedTheme={theme} setCurrentTheme={setTheme} />
     </div>
   );
 }

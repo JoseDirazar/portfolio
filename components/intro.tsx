@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
@@ -15,6 +15,7 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { resolvedTheme } = useTheme();
+
   return (
     <section
       ref={ref}
@@ -71,7 +72,7 @@ export default function Intro() {
           target="_blank"
           className="inline-block"
         >
-          <BiggerLogo theme={resolvedTheme as string} />
+          <BiggerLogo theme={resolvedTheme} />
         </Link>
         , building <span className="italic">sites & apps</span> for clients. My
         focus is <span className="underline">Mobile Development with Expo</span>

@@ -1,12 +1,12 @@
-"use client";
-
-import * as React from "react";
-import { useTheme } from "next-themes";
 import { motion as m } from "framer-motion";
 
-export default function SwitchThemeButton() {
-  const { setTheme, theme } = useTheme();
-
+export default function SwitchThemeButton({
+  setCurrentTheme,
+  resolvedTheme,
+}: {
+  setCurrentTheme: (theme: string) => void;
+  resolvedTheme?: string;
+}) {
   const raysVariants = {
     hidden: {
       strokeOpacity: 0,
@@ -68,9 +68,15 @@ export default function SwitchThemeButton() {
     "M70 49.5C70 60.8218 60.8218 70 49.5 70C38.1782 70 29 60.8218 29 49.5C29 38.1782 38.1782 29 49.5 29C60 29 69.5 38 70 49.5Z";
   const moonPath =
     "M70 49.5C70 60.8218 60.8218 70 49.5 70C38.1782 70 29 60.8218 29 49.5C29 38.1782 38.1782 29 49.5 29C39 45 49.5 59.5 70 49.5Z";
+
+  if (!resolvedTheme) return null;
   return (
     <button
-      onClick={() => (theme === "dark" ? setTheme("light") : setTheme("dark"))}
+      onClick={() =>
+        resolvedTheme === "dark"
+          ? setCurrentTheme("light")
+          : setCurrentTheme("dark")
+      }
     >
       <m.svg
         strokeWidth="4"
@@ -87,13 +93,13 @@ export default function SwitchThemeButton() {
           d={moonPath}
           className={"absolute top-0 left-0 stroke-blue-100 "}
           initial="hidden"
-          animate={theme === "dark" ? "visible" : "hidden"}
+          animate={resolvedTheme === "dark" ? "visible" : "hidden"}
         />
 
         <m.g
           variants={raysVariants}
           initial="hidden"
-          animate={theme === "light" ? "visible" : "hidden"}
+          animate={resolvedTheme === "light" ? "visible" : "hidden"}
           className="stroke-6 stroke-yellow-600 "
           style={{ strokeLinecap: "round" }}
         >
@@ -118,7 +124,7 @@ export default function SwitchThemeButton() {
           transition={{ duration: 1, type: "spring" }}
           initial={{ fillOpacity: 0, strokeOpacity: 0 }}
           animate={
-            theme === "dark"
+            resolvedTheme === "dark"
               ? {
                   d: moonPath,
                   rotate: -360,

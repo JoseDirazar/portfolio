@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
@@ -15,6 +15,8 @@ export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { resolvedTheme } = useTheme();
 
+  useEffect(() => {}, [resolvedTheme]);
+
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-2">
       <SectionHeading>My experience</SectionHeading>
@@ -24,7 +26,9 @@ export default function Experience() {
             <VerticalTimelineElement
               contentStyle={{
                 background:
-                  resolvedTheme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                  resolvedTheme === "light"
+                    ? "#f3f4f6"
+                    : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
@@ -40,7 +44,9 @@ export default function Experience() {
               icon={item.icon}
               iconStyle={{
                 background:
-                  resolvedTheme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                  resolvedTheme === "light"
+                    ? "white"
+                    : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
               }}
             >
