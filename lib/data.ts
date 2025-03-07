@@ -1,5 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
+import { CgMail, CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import {
   SiAmazon,
@@ -26,6 +26,14 @@ import {
   SiVercel,
   SiVite,
   SiTypeorm,
+  SiCypress,
+  SiJest,
+  SiStripe,
+  SiMercadopago,
+  SiAuth0,
+  SiAwsamplify,
+  SiGooglemaps,
+  SiResend,
 } from "react-icons/si";
 
 import BelliDeportes from "@/public/BelliDeportes.png";
@@ -207,4 +215,23 @@ export const devOpsSkills = [
   { title: "Vercel", icon: React.createElement(SiVercel) },
   { title: "S3 backups", icon: React.createElement(SiAmazon) },
   { title: "DNS configurations", icon: React.createElement(SiCloudflare) },
+];
+
+export const testingSkills = [
+  { title: "Jest", icon: React.createElement(SiJest) },
+  { title: "Cypress", icon: React.createElement(SiCypress) },
+  { title: "Detox", icon: null },
+  { title: "Maestro", icon: null },
+  { title: "Wiremock", icon: null },
+];
+
+export const integrationSkills = [
+  { title: "Stripe", icon: React.createElement(SiStripe) },
+  { title: "MercadoPago", icon: React.createElement(SiMercadopago) },
+  { title: "Auth0", icon: React.createElement(SiAuth0) },
+  { title: "Cognito", icon: React.createElement(SiAmazon) },
+  { title: "Amplify", icon: React.createElement(SiAwsamplify) },
+  { title: "Google Maps", icon: React.createElement(SiGooglemaps) },
+  { title: "Resend", icon: React.createElement(SiResend) },
+  { title: "Nodemailer", icon: React.createElement(CgMail) },
 ];

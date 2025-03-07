@@ -4,17 +4,17 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { BiggerLogo } from "@/public/BiggerLogo";
+import { useTheme } from "next-themes";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-
+  const { resolvedTheme } = useTheme();
   return (
     <section
       ref={ref}
@@ -63,15 +63,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Joseph.</span> I&apos;m a{" "}
+        <span className="font-bold">Hello, I&apos;m Jose.</span> I&apos;m a{" "}
         <span className="font-bold">full stack developer</span> currently
-        working at{" "}
+        looking for a full time job. Recently I worked at{" "}
         <Link
           href="https://www.biggertech.co/"
           target="_blank"
           className="inline-block"
         >
-          <BiggerLogo />
+          <BiggerLogo theme={resolvedTheme as string} />
         </Link>
         , building <span className="italic">sites & apps</span> for clients. My
         focus is <span className="underline">Mobile Development with Expo</span>
@@ -79,7 +79,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -120,7 +120,7 @@ export default function Intro() {
           href="https://github.com/JoseDirazar"
           target="_blank"
         >
-          <FaGithubSquare />
+          <BsGithub />
         </a>
       </motion.div>
     </section>

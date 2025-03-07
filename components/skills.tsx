@@ -8,6 +8,8 @@ import {
   devOpsSkills,
   databaseSkills,
   languajes,
+  testingSkills,
+  integrationSkills,
 } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
@@ -142,6 +144,46 @@ export default function Skills() {
             custom={index}
           >
             {skill.icon}
+            {skill.title}
+          </motion.li>
+        ))}
+      </ul>
+      <SubDivider />
+      <div className="text-2xl font-semibold mb-8">Testing</div>
+      <ul className="flex flex-wrap justify-center max-w-lg gap-2 text-lg text-gray-800">
+        {testingSkills.map((skill, index) => (
+          <motion.li
+            className="bg-white borderBlack rounded-xl px-5 py-3 flex flex-row items-center justify-center  gap-2 dark:bg-white/10 dark:text-white/80"
+            key={index}
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            custom={index}
+          >
+            {skill.icon && skill.icon}
+            {skill.title}
+          </motion.li>
+        ))}
+      </ul>
+      <SubDivider />
+      <div className="text-2xl font-semibold mb-8">Integrations</div>
+      <ul className="flex flex-wrap justify-center max-w-lg gap-2 text-lg text-gray-800">
+        {integrationSkills.map((skill, index) => (
+          <motion.li
+            className="bg-white borderBlack rounded-xl px-5 py-3 flex flex-row items-center justify-center  gap-2 dark:bg-white/10 dark:text-white/80"
+            key={index}
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            custom={index}
+          >
+            {skill.icon && skill.icon}
             {skill.title}
           </motion.li>
         ))}
