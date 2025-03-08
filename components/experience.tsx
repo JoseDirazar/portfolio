@@ -10,12 +10,11 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "next-themes";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { resolvedTheme } = useTheme();
-
-  useEffect(() => {}, [resolvedTheme]);
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-2">
@@ -55,6 +54,13 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+              <a
+                target="_blank"
+                href={item.url}
+                className="!mt-1 flex items-center justify-center gap-2 bg-neutral-300 px-4 py-2 text-sm font-semibold text-gray-900 hover:bg-neutral-400 hover:text-gray-950 dark:bg-white/10 dark:text-white/90 dark:hover:bg-white/20 dark:hover:text-white md:text-base w-fit rounded"
+              >
+                Link <FaArrowCircleRight />
+              </a>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
