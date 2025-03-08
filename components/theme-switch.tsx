@@ -12,7 +12,7 @@ export default function ThemeSwitch() {
   }, []);
   if (!mounted) return null;
   return (
-    <div className="fixed bottom-5 right-5 w-[3rem] h-[3rem] shadow-2xl flex items-center justify-center">
+    <div className="fixed bottom-5 right-5 w-[3rem] h-[3rem] shadow-2xl flex items-center justify-center bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-800/50 rounded-full">
       <SwitchThemeButton
         resolvedTheme={resolvedTheme}
         setCurrentTheme={setTheme}

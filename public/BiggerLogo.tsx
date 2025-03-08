@@ -2,17 +2,31 @@ import { useEffect, useState } from "react";
 
 export const BiggerLogo = ({ theme }: { theme?: string }) => {
   const [currentTheme, setCurrentTheme] = useState<null | string>(null);
+  const [width, setWidth] = useState(98);
+  const [height, setHeight] = useState(38);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 643) {
+        setWidth(70);
+        setHeight(24);
+      } else {
+        setWidth(98);
+        setHeight(38);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     if (theme) setCurrentTheme(theme);
   }, [theme]);
+
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="98"
-      height="38"
-      viewBox="0 0 98 38"
-      fill="none"
-    >
+    <svg width={width} height={height} viewBox="0 0 98 38" fill="none">
       <g clipPath="url(#clip0_303_2135)">
         <path
           d="M14.8425 18.6791H14.5829V18.058H14.8425C16.3125 18.058 16.8316 17.0589 16.8316 16.0279V1.81785C16.8316 1.30145 16.4072 0.882355 15.8844 0.882355H0V2.14714H0.871414V35.7949H0V37.0615H15.8919C16.4148 37.0615 16.8391 36.6424 16.8391 36.126L16.8316 20.0749C16.8316 18.9897 16.3125 18.6791 14.8425 18.6791ZM7.97723 4.50457H9.7068V16.5425H7.97723V4.50457ZM9.73142 33.4449H7.97723V20.1609H9.73142V33.4449Z"

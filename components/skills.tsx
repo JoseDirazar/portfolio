@@ -31,7 +31,7 @@ const fadeInAnimationVariants = {
 const SubDivider = () => {
   return (
     <motion.div
-      className="bg-gray-400 my-12 h-[2px] w-full max-w-lg rounded-full hidden sm:block"
+      className="bg-gray-400 my-12 h-[2px] w-full max-w-lg rounded-full sm:block"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.125 }}

@@ -41,6 +41,7 @@ import multicuotasTandil from "@/public/multicuotas-tandil.png";
 import tuBienestar from "@/public/tu-bienestar.png";
 import padelink from "@/public/padelink.png";
 import forgebyteslab from "@/public/forgebyteslab.png";
+import workitfy from "@/public/Workitfy.png";
 export const links = [
   {
     name: "Home",
@@ -80,11 +81,11 @@ export const experiencesData = [
   },
   {
     title: "Bigger Tech",
-    location: "Remote, Argentina",
+    location: "Remote, Australia",
     description:
       "Bigger Tech is a company that provides IT services to small and medium-sized businesses. I'm currently work as a Full Stack Developer making web and mobile apps for Bigger clients.",
     icon: React.createElement(CgWorkAlt),
-    date: "Since Dec - 2023",
+    date: "May - 2024 | Mar - 2025",
     url: "https://www.biggertech.co/",
   },
   {
@@ -93,7 +94,7 @@ export const experiencesData = [
     description:
       "Mayland labs is a small statup that provides IT services to small and medium-sized businesses located in Argentina.",
     icon: React.createElement(CgWorkAlt),
-    date: "Since Nov - 2023",
+    date: "Nov - 2023 | May - 2024",
     url: "https://www.maylandlabs.com/",
   },
   {
@@ -112,7 +113,7 @@ export const experiencesData = [
       "FreeCodeCamp is a online platform where I learned the fundamentals of web development with HTML, CSS and advance JavaScript algorithms.",
     icon: React.createElement(LuGraduationCap),
     url: "https://www.freecodecamp.org/certification/fcce44b564a-4071-40f3-a9b8-537a761d8ec5/javascript-algorithms-and-data-structures",
-    date: "Nov - 2022 - Apr - 2023",
+    date: "Nov - 2022 | Apr - 2023",
   },
 ] as const;
 
@@ -146,6 +147,20 @@ export const projectsData = [
     ],
     imageUrl: padelink,
     url: "https://www.padelink.com.ar/",
+  },
+  {
+    title: "Workitfy",
+    description: "Workitfy is a social platform for remote workers.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Nest.js",
+      "TailwindCss",
+      "TypeORM",
+      "Vite.js",
+    ],
+    imageUrl: workitfy,
+    url: "https://workitfy.maylandlabs.com/",
   },
   {
     title: "Multicuotas Tandíl",

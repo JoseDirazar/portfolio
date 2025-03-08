@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
@@ -57,7 +57,7 @@ export default function Experience() {
               <a
                 target="_blank"
                 href={item.url}
-                className="!mt-1 flex items-center justify-center gap-2 bg-neutral-300 px-4 py-2 text-sm font-semibold text-gray-900 hover:bg-neutral-400 hover:text-gray-950 dark:bg-white/10 dark:text-white/90 dark:hover:bg-white/20 dark:hover:text-white md:text-base w-fit rounded"
+                className="!mt-1 flex items-center justify-center gap-2 bg-neutral-700 px-4 py-2 text-sm font-semibold text-gray-300 hover:bg-neutral-400 hover:text-gray-950 dark:bg-white/10 dark:text-white/90 dark:hover:bg-white/20 dark:hover:text-white md:text-base w-fit rounded"
               >
                 Link <FaArrowCircleRight />
               </a>
