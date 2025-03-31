@@ -17,3 +17,7 @@ html.dark {
 #coolify {
   filter: grayscale(100%) saturate(100%);
 }
+
+#space-invaders {
+  @apply bg-transparent dark:bg-transparent;
+}

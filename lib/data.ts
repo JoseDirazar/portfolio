@@ -42,6 +42,7 @@ import tuBienestar from "@/public/tu-bienestar.png";
 import padelink from "@/public/padelink.png";
 import forgebyteslab from "@/public/forgebyteslab.png";
 import workitfy from "@/public/Workitfy.png";
+import spaceInvaders from "@/public/space-invaders.png";
 export const links = [
   {
     name: "Home",
@@ -118,6 +119,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Space Invaders",
+    description:
+      "This is a game developed using Bevy and Rust. It was my first game and I learned a lot about ECS, game loop and more.",
+    tags: ["Rust", "Bevy", "WASM"],
+    imageUrl: spaceInvaders,
+    url: "/space-invaders",
+  },
   {
     title: "ForgeBytes Lab",
     description: "This is the landing page for ForgeBytes Lab.",
