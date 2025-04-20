@@ -44,6 +44,7 @@ import forgebyteslab from "@/public/forgebyteslab.png";
 import workitfy from "@/public/Workitfy.png";
 import spaceInvaders from "@/public/space-invaders.png";
 import deAcaFarmaciasDeTurno from "@/public/de-aca-farmacias-de-turno.png";
+
 export const links = [
   {
     name: "Home",
@@ -128,6 +129,7 @@ export const projectsData = [
     url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
   },
   {
+
     title: "Space Invaders",
     description:
       "This is a game developed using Bevy and Rust. It was my first game and I learned a lot about ECS, game loop and more.",
