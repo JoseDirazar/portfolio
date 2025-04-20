@@ -43,6 +43,7 @@ import padelink from "@/public/padelink.png";
 import forgebyteslab from "@/public/forgebyteslab.png";
 import workitfy from "@/public/Workitfy.png";
 import spaceInvaders from "@/public/space-invaders.png";
+import deAcaFarmaciasDeTurno from "@/public/de-aca-farmacias-de-turno.png";
 export const links = [
   {
     name: "Home",
@@ -119,6 +120,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Deaca Farmacias de turno Olavarría",
+    description: "This is a page to search pharmacies on Olavarría",
+    tags: ["Vite.js", "Python", "React", "TailwindCSS V4"],
+    imageUrl: deAcaFarmaciasDeTurno,
+    url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
+  },
   {
     title: "Space Invaders",
     description:
