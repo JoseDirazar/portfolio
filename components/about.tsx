@@ -29,14 +29,16 @@ export default function About() {
         feeling of finally figuring out a solution to a problem and learn more
         every day. My core stack is{" "}
         <span className="font-medium">React and Next.js</span> for the frontend
-        and <span className="font-medium">Nest.js</span> on the backend . I am
+        and <span className="font-medium">Nest.js</span> for the backend . I am
         also familiar with Rust and build smart contracts on Stellar network.
       </p>
 
       <p>
         <span className="italic">When I&apos;m not coding</span>, I enjoy
         researching new trending tecnologies and staying update in the{" "}
-        <span className="font-medium">tech</span> scene. Check out next section{" "}
+        <span className="font-medium">tech</span> scene. Currently I&apos;m
+        learning Bevy: a new fame engine writen in Rust, and learging how to
+        build games. Please check out the next section{" "}
         <span className="font-medium">👇</span>.
       </p>
     </motion.section>
