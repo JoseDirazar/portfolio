@@ -34,6 +34,8 @@ import {
   SiAwsamplify,
   SiGooglemaps,
   SiResend,
+  SiGoogle,
+  SiMailboxdotorg,
 } from "react-icons/si";
 
 import BelliDeportes from "@/public/BelliDeportes.png";
@@ -44,6 +46,7 @@ import forgebyteslab from "@/public/forgebyteslab.png";
 import workitfy from "@/public/Workitfy.png";
 import spaceInvaders from "@/public/space-invaders.png";
 import deAcaFarmaciasDeTurno from "@/public/de-aca-farmacias-de-turno.png";
+import pawdlink from "@/public/pawdlink.png";
 
 export const links = [
   {
@@ -77,7 +80,7 @@ export const experiencesData = [
     title: "ForgeBytes Lab",
     location: "Buenos Aires, ARG",
     description:
-      "ForgeBytes Lab is my personal VPS where I develop and host client's projects.",
+      "ForgeBytes Lab is my personal branding as a freelance developer. Here is where I host my clients projects. Check out my projects down below to see what I have done.",
     icon: React.createElement(CgWorkAlt),
     date: "Since Jan - 2025",
     url: "https://forgebyteslab.com/",
@@ -86,7 +89,7 @@ export const experiencesData = [
     title: "Bigger Tech",
     location: "Remote, Australia",
     description:
-      "Bigger Tech is a company that provides IT services to small and medium-sized businesses. I'm currently work as a Full Stack Developer making web and mobile apps for Bigger clients.",
+      "Bigger Tech is a company that provides IT services to small and medium-sized businesses. I worked as a full-stack developer making web and mobile apps for Bigger clients.",
     icon: React.createElement(CgWorkAlt),
     date: "May - 2024 | Mar - 2025",
     url: "https://www.biggertech.co/",
@@ -106,7 +109,7 @@ export const experiencesData = [
     description:
       "Henry is a intensive bootcamp where I learned the fundamentals of modern Full Stack development with React, Node.js, Express and PostgreSQL. Also learned about testing, best practices and learned how to work in a team with Scrum, Git and GitHub.",
     icon: React.createElement(LuGraduationCap),
-    date: "Apr - 2023 - Sep - 2023",
+    date: "Apr - 2023 | Sep - 2023",
     url: "https://certificates.soyhenry.com/new-cert?id=2ca8a03c45ac77da0e6ddb9ccb624fdfe0a3b3c73bed6be0413138c267683122",
   },
   {
@@ -122,14 +125,27 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Pawdlink",
+    description:
+      "Pawdlink is a social platform where users can find a sitter to take care of their pets.",
+    tags: [
+      "Vite.js",
+      "React v19",
+      "TailwindCSS v4",
+      "Shadcn UI",
+      "Google OAuth",
+    ],
+    imageUrl: pawdlink,
+    url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
+  },
+  {
     title: "Deaca Farmacias de turno Olavarría",
     description: "This is a page to search pharmacies on Olavarría",
-    tags: ["Vite.js", "Python", "React", "TailwindCSS V4"],
+    tags: ["Vite.js", "Python", "React", "TailwindCSS V4", "Google OAuth"],
     imageUrl: deAcaFarmaciasDeTurno,
     url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
   },
   {
-
     title: "Space Invaders",
     description:
       "This is a game developed using Bevy and Rust. It was my first game and I learned a lot about ECS, game loop and more.",
@@ -145,10 +161,17 @@ export const projectsData = [
     url: "https://forgebyteslab.com/",
   },
   {
-    title: "TuBienestar Masajes Olavarría",
+    title: "Tu Bienestar Masajes Olavarría",
     description:
       "This is a booking platform for a massage salon located in Olavarría, Buenos Aires, Argentina.",
-    tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "TailwindCss",
+      "Prisma",
+      "Auth.js",
+    ],
     imageUrl: tuBienestar,
     url: "https://tu-bienestar.forgebyteslab.com/",
   },
@@ -163,6 +186,7 @@ export const projectsData = [
       "TailwindCss",
       "TypeORM",
       "Vite.js",
+      "Google OAuth",
     ],
     imageUrl: padelink,
     url: "https://www.padelink.com.ar/",
@@ -177,6 +201,7 @@ export const projectsData = [
       "TailwindCss",
       "TypeORM",
       "Vite.js",
+      "Google OAuth",
     ],
     imageUrl: workitfy,
     url: "https://workitfy.maylandlabs.com/",
@@ -247,7 +272,7 @@ export const devOpsSkills = [
     }),
   },
   { title: "Vercel", icon: React.createElement(SiVercel) },
-  { title: "S3 backups", icon: React.createElement(SiAmazon) },
+  { title: "S3 buckets", icon: React.createElement(SiAmazon) },
   { title: "DNS configurations", icon: React.createElement(SiCloudflare) },
 ];
 
@@ -267,5 +292,6 @@ export const integrationSkills = [
   { title: "Amplify", icon: React.createElement(SiAwsamplify) },
   { title: "Google Maps", icon: React.createElement(SiGooglemaps) },
   { title: "Resend", icon: React.createElement(SiResend) },
-  { title: "Nodemailer", icon: React.createElement(CgMail) },
+  { title: "Nodemailer", icon: React.createElement(SiMailboxdotorg) },
+  { title: "Google OAuth", icon: React.createElement(SiGoogle) },
 ];
