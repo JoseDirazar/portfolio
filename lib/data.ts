@@ -48,182 +48,175 @@ import spaceInvaders from "@/public/space-invaders.png";
 import deAcaFarmaciasDeTurno from "@/public/de-aca-farmacias-de-turno.png";
 import pawdlink from "@/public/pawdlink.png";
 
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
-] as const;
+// This function will be used to get translated data
+export const getTranslatedData = (t: (key: string) => string) => ({
+  links: [
+    {
+      name: t("data:links.home"),
+      hash: "#home",
+    },
+    {
+      name: t("data:links.about"),
+      hash: "#about",
+    },
+    {
+      name: t("data:links.projects"),
+      hash: "#projects",
+    },
+    {
+      name: t("data:links.skills"),
+      hash: "#skills",
+    },
+    {
+      name: t("data:links.experience"),
+      hash: "#experience",
+    },
+    {
+      name: t("data:links.contact"),
+      hash: "#contact",
+    },
+  ],
 
-export const experiencesData = [
-  {
-    title: "ForgeBytes Lab",
-    location: "Buenos Aires, ARG",
-    description:
-      "ForgeBytes Lab is my personal branding as a freelance developer. Here is where I host my clients projects. Check out my projects down below to see what I have done.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Since Jan - 2025",
-    url: "https://forgebyteslab.com/",
-  },
-  {
-    title: "Bigger Tech",
-    location: "Remote, Australia",
-    description:
-      "Bigger Tech is a company that provides IT services to small and medium-sized businesses. I worked as a full-stack developer making web and mobile apps for Bigger clients.",
-    icon: React.createElement(CgWorkAlt),
-    date: "May - 2024 | Mar - 2025",
-    url: "https://www.biggertech.co/",
-  },
-  {
-    title: "Mayland Labs",
-    location: "Buenos Aires, ARG",
-    description:
-      "Mayland labs is a small statup that provides IT services to small and medium-sized businesses located in Argentina.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Nov - 2023 | May - 2024",
-    url: "https://www.maylandlabs.com/",
-  },
-  {
-    title: "Henry Bootcamp",
-    location: "Argentina, remote",
-    description:
-      "Henry is a intensive bootcamp where I learned the fundamentals of modern Full Stack development with React, Node.js, Express and PostgreSQL. Also learned about testing, best practices and learned how to work in a team with Scrum, Git and GitHub.",
-    icon: React.createElement(LuGraduationCap),
-    date: "Apr - 2023 | Sep - 2023",
-    url: "https://certificates.soyhenry.com/new-cert?id=2ca8a03c45ac77da0e6ddb9ccb624fdfe0a3b3c73bed6be0413138c267683122",
-  },
-  {
-    title: "FreeCodeCamp",
-    location: "Argentina, remoto",
-    description:
-      "FreeCodeCamp is a online platform where I learned the fundamentals of web development with HTML, CSS and advance JavaScript algorithms.",
-    icon: React.createElement(LuGraduationCap),
-    url: "https://www.freecodecamp.org/certification/fcce44b564a-4071-40f3-a9b8-537a761d8ec5/javascript-algorithms-and-data-structures",
-    date: "Nov - 2022 | Apr - 2023",
-  },
-] as const;
+  experiencesData: [
+    {
+      title: t("data:experiences.forgebytes.title"),
+      location: t("data:experiences.forgebytes.location"),
+      description: t("data:experiences.forgebytes.description"),
+      icon: React.createElement(CgWorkAlt),
+      date: "Since Jan - 2025",
+      url: "https://forgebyteslab.com/",
+    },
+    {
+      title: t("data:experiences.biggertech.title"),
+      location: t("data:experiences.biggertech.location"),
+      description: t("data:experiences.biggertech.description"),
+      icon: React.createElement(CgWorkAlt),
+      date: "May - 2024 | Mar - 2025",
+      url: "https://www.biggertech.co/",
+    },
+    {
+      title: t("data:experiences.mayland.title"),
+      location: t("data:experiences.mayland.location"),
+      description: t("data:experiences.mayland.description"),
+      icon: React.createElement(CgWorkAlt),
+      date: "Nov - 2023 | May - 2024",
+      url: "https://www.maylandlabs.com/",
+    },
+    {
+      title: t("data:experiences.henry.title"),
+      location: t("data:experiences.henry.location"),
+      description: t("data:experiences.henry.description"),
+      icon: React.createElement(LuGraduationCap),
+      date: "Apr - 2023 | Sep - 2023",
+      url: "https://certificates.soyhenry.com/new-cert?id=2ca8a03c45ac77da0e6ddb9ccb624fdfe0a3b3c73bed6be0413138c267683122",
+    },
+    {
+      title: t("data:experiences.freecodecamp.title"),
+      location: t("data:experiences.freecodecamp.location"),
+      description: t("data:experiences.freecodecamp.description"),
+      icon: React.createElement(LuGraduationCap),
+      url: "https://www.freecodecamp.org/certification/fcce44b564a-4071-40f3-a9b8-537a761d8ec5/javascript-algorithms-and-data-structures",
+      date: "Nov - 2022 | Apr - 2023",
+    },
+  ],
 
-export const projectsData = [
-  {
-    title: "Pawdlink",
-    description:
-      "Pawdlink is a social platform where users can find a sitter to take care of their pets.",
-    tags: [
-      "Vite.js",
-      "React v19",
-      "TailwindCSS v4",
-      "Shadcn UI",
-      "Google OAuth",
-    ],
-    imageUrl: pawdlink,
-    url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
-  },
-  {
-    title: "Deaca Farmacias de turno Olavarría",
-    description: "This is a page to search pharmacies on Olavarría",
-    tags: ["Vite.js", "Python", "React", "TailwindCSS V4", "Google OAuth"],
-    imageUrl: deAcaFarmaciasDeTurno,
-    url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
-  },
-  {
-    title: "Space Invaders",
-    description:
-      "This is a game developed using Bevy and Rust. It was my first game and I learned a lot about ECS, game loop and more.",
-    tags: ["Rust", "Bevy", "WASM"],
-    imageUrl: spaceInvaders,
-    url: "/space-invaders",
-  },
-  {
-    title: "ForgeBytes Lab",
-    description: "This is the landing page for ForgeBytes Lab.",
-    tags: ["React", "TypeScript", "Vite.js", "TailwindCss"],
-    imageUrl: forgebyteslab,
-    url: "https://forgebyteslab.com/",
-  },
-  {
-    title: "Tu Bienestar Masajes Olavarría",
-    description:
-      "This is a booking platform for a massage salon located in Olavarría, Buenos Aires, Argentina.",
-    tags: [
-      "React",
-      "TypeScript",
-      "Next.js",
-      "TailwindCss",
-      "Prisma",
-      "Auth.js",
-    ],
-    imageUrl: tuBienestar,
-    url: "https://tu-bienestar.forgebyteslab.com/",
-  },
-  {
-    title: "Padelink",
-    description:
-      "This is a social media platform for a peddle club located in Buenos Aires C.A.B.A, Argentina.",
-    tags: [
-      "React",
-      "TypeScript",
-      "Nest.js",
-      "TailwindCss",
-      "TypeORM",
-      "Vite.js",
-      "Google OAuth",
-    ],
-    imageUrl: padelink,
-    url: "https://www.padelink.com.ar/",
-  },
-  {
-    title: "Workitfy",
-    description: "Workitfy is a social platform for remote workers.",
-    tags: [
-      "React",
-      "TypeScript",
-      "Nest.js",
-      "TailwindCss",
-      "TypeORM",
-      "Vite.js",
-      "Google OAuth",
-    ],
-    imageUrl: workitfy,
-    url: "https://workitfy.maylandlabs.com/",
-  },
-  {
-    title: "Multicuotas Tandíl",
-    description:
-      "An e-commerce for a client store located in Tandíl. User can search products, order and pay with MercadoPago",
-    tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
-    imageUrl: multicuotasTandil,
-    url: "https://multicuotas-tandil.vercel.app/",
-  },
-  {
-    title: "Belli Deportes",
-    description:
-      "An e-commerce for an sport store located in my city. User can search products, order and pay with MercadoPago",
-    tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
-    imageUrl: BelliDeportes,
-    url: "https://belli-deportes.vercel.app/",
-  },
-] as const;
+  projectsData: [
+    {
+      title: t("data:projects.pawdlink.title"),
+      description: t("data:projects.pawdlink.description"),
+      tags: [
+        "Vite.js",
+        "React v19",
+        "TailwindCSS v4",
+        "Shadcn UI",
+        "Google OAuth",
+      ],
+      imageUrl: pawdlink,
+      url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
+    },
+    {
+      title: t("data:projects.deaca.title"),
+      description: t("data:projects.deaca.description"),
+      tags: ["Vite.js", "Python", "React", "TailwindCSS V4", "Google OAuth"],
+      imageUrl: deAcaFarmaciasDeTurno,
+      url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
+    },
+    {
+      title: t("data:projects.spaceinvaders.title"),
+      description: t("data:projects.spaceinvaders.description"),
+      tags: ["Rust", "Bevy", "WASM"],
+      imageUrl: spaceInvaders,
+      url: "/space-invaders",
+    },
+    {
+      title: t("data:projects.forgebytes.title"),
+      description: t("data:projects.forgebytes.description"),
+      tags: ["React", "TypeScript", "Vite.js", "TailwindCss"],
+      imageUrl: forgebyteslab,
+      url: "https://forgebyteslab.com/",
+    },
+    {
+      title: t("data:projects.tubienestar.title"),
+      description: t("data:projects.tubienestar.description"),
+      tags: [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "TailwindCss",
+        "Prisma",
+        "Auth.js",
+      ],
+      imageUrl: tuBienestar,
+      url: "https://tu-bienestar.forgebyteslab.com/",
+    },
+    {
+      title: t("data:projects.padelink.title"),
+      description: t("data:projects.padelink.description"),
+      tags: [
+        "React",
+        "TypeScript",
+        "Nest.js",
+        "TailwindCss",
+        "TypeORM",
+        "Vite.js",
+        "Google OAuth",
+      ],
+      imageUrl: padelink,
+      url: "https://www.padelink.com.ar/",
+    },
+    {
+      title: t("data:projects.workitfy.title"),
+      description: t("data:projects.workitfy.description"),
+      tags: [
+        "React",
+        "TypeScript",
+        "Nest.js",
+        "TailwindCss",
+        "TypeORM",
+        "Vite.js",
+        "Google OAuth",
+      ],
+      imageUrl: workitfy,
+      url: "https://workitfy.maylandlabs.com/",
+    },
+    {
+      title: t("data:projects.multicuotas.title"),
+      description: t("data:projects.multicuotas.description"),
+      tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
+      imageUrl: multicuotasTandil,
+      url: "https://multicuotas-tandil.vercel.app/",
+    },
+    {
+      title: t("data:projects.bellideportes.title"),
+      description: t("data:projects.bellideportes.description"),
+      tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
+      imageUrl: BelliDeportes,
+      url: "https://belli-deportes.vercel.app/",
+    },
+  ],
+});
 
+// Static data that doesn't need translation
 export const languajes = [
   { title: "TypeScript", icon: React.createElement(SiTypescript) },
   { title: "JavaScript", icon: React.createElement(SiJavascript) },
@@ -232,6 +225,7 @@ export const languajes = [
   { title: "SQL", icon: React.createElement(SiMysql) },
   { title: "Rust", icon: React.createElement(SiRust) },
 ];
+
 export const frontendSkills = [
   { title: "React", icon: React.createElement(SiReact) },
   { title: "Next.js", icon: React.createElement(SiNextdotjs) },
@@ -239,7 +233,7 @@ export const frontendSkills = [
   { title: "Vite", icon: React.createElement(SiVite) },
   { title: "React Native", icon: React.createElement(SiReact) },
   { title: "Expo", icon: React.createElement(SiExpo) },
-] as const;
+];
 
 export const backendSkills = [
   { title: "Express js", icon: React.createElement(SiExpress) },

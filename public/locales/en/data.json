@@ -1,0 +1,75 @@
+{
+  "links": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "experiences": {
+    "forgebytes": {
+      "title": "ForgeBytes Lab",
+      "location": "Buenos Aires, ARG",
+      "description": "ForgeBytes Lab is my personal branding as a freelance developer. Here is where I host my clients projects. Check out my projects down below to see what I have done."
+    },
+    "biggertech": {
+      "title": "Bigger Tech",
+      "location": "Remote, Australia",
+      "description": "Bigger Tech is a company that provides IT services to small and medium-sized businesses. I worked as a full-stack developer making web and mobile apps for Bigger clients."
+    },
+    "mayland": {
+      "title": "Mayland Labs",
+      "location": "Buenos Aires, ARG",
+      "description": "Mayland labs is a small statup that provides IT services to small and medium-sized businesses located in Argentina."
+    },
+    "henry": {
+      "title": "Henry Bootcamp",
+      "location": "Argentina, remote",
+      "description": "Henry is a intensive bootcamp where I learned the fundamentals of modern Full Stack development with React, Node.js, Express and PostgreSQL. Also learned about testing, best practices and learned how to work in a team with Scrum, Git and GitHub."
+    },
+    "freecodecamp": {
+      "title": "FreeCodeCamp",
+      "location": "Argentina, remote",
+      "description": "FreeCodeCamp is a online platform where I learned the fundamentals of web development with HTML, CSS and advance JavaScript algorithms."
+    }
+  },
+  "projects": {
+    "pawdlink": {
+      "title": "Pawdlink",
+      "description": "Pawdlink is a social platform where users can find a sitter to take care of their pets."
+    },
+    "deaca": {
+      "title": "Deaca Farmacias de turno Olavarría",
+      "description": "This is a page to search pharmacies on Olavarría"
+    },
+    "spaceinvaders": {
+      "title": "Space Invaders",
+      "description": "This is a game developed using Bevy and Rust. It was my first game and I learned a lot about ECS, game loop and more."
+    },
+    "forgebytes": {
+      "title": "ForgeBytes Lab",
+      "description": "This is the landing page for ForgeBytes Lab."
+    },
+    "tubienestar": {
+      "title": "Tu Bienestar Masajes Olavarría",
+      "description": "This is a booking platform for a massage salon located in Olavarría, Buenos Aires, Argentina."
+    },
+    "padelink": {
+      "title": "Padelink",
+      "description": "This is a social media platform for a peddle club located in Buenos Aires C.A.B.A, Argentina."
+    },
+    "workitfy": {
+      "title": "Workitfy",
+      "description": "Workitfy is a social platform for remote workers."
+    },
+    "multicuotas": {
+      "title": "Multicuotas Tandíl",
+      "description": "An e-commerce for a client store located in Tandíl. User can search products, order and pay with MercadoPago"
+    },
+    "bellideportes": {
+      "title": "Belli Deportes",
+      "description": "An e-commerce for an sport store located in my city. User can search products, order and pay with MercadoPago"
+    }
+  }
+}

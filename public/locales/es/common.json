@@ -1,0 +1,27 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Bienvenido a Mi Portafolio",
+    "subtitle": "Desarrollador Full Stack"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Soy un desarrollador apasionado con experiencia en desarrollo web."
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "view": "Ver Proyecto"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje"
+  }
+}

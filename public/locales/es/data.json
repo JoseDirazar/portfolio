@@ -1,0 +1,75 @@
+{
+  "links": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "experiences": {
+    "forgebytes": {
+      "title": "ForgeBytes Lab",
+      "location": "Buenos Aires, ARG",
+      "description": "ForgeBytes Lab es mi marca personal como desarrollador freelance. Aquí es donde alojo los proyectos de mis clientes. Revisa mis proyectos a continuación para ver lo que he hecho."
+    },
+    "biggertech": {
+      "title": "Bigger Tech",
+      "location": "Remoto, Australia",
+      "description": "Bigger Tech es una empresa que proporciona servicios de TI a pequeñas y medianas empresas. Trabajé como desarrollador full-stack creando aplicaciones web y móviles para los clientes de Bigger."
+    },
+    "mayland": {
+      "title": "Mayland Labs",
+      "location": "Buenos Aires, ARG",
+      "description": "Mayland labs es una pequeña startup que proporciona servicios de TI a pequeñas y medianas empresas ubicadas en Argentina."
+    },
+    "henry": {
+      "title": "Henry Bootcamp",
+      "location": "Argentina, remoto",
+      "description": "Henry es un bootcamp intensivo donde aprendí los fundamentos del desarrollo Full Stack moderno con React, Node.js, Express y PostgreSQL. También aprendí sobre testing, mejores prácticas y cómo trabajar en equipo con Scrum, Git y GitHub."
+    },
+    "freecodecamp": {
+      "title": "FreeCodeCamp",
+      "location": "Argentina, remoto",
+      "description": "FreeCodeCamp es una plataforma en línea donde aprendí los fundamentos del desarrollo web con HTML, CSS y algoritmos avanzados de JavaScript."
+    }
+  },
+  "projects": {
+    "pawdlink": {
+      "title": "Pawdlink",
+      "description": "Pawdlink es una plataforma social donde los usuarios pueden encontrar un cuidador para sus mascotas."
+    },
+    "deaca": {
+      "title": "Deaca Farmacias de turno Olavarría",
+      "description": "Esta es una página para buscar farmacias en Olavarría"
+    },
+    "spaceinvaders": {
+      "title": "Space Invaders",
+      "description": "Este es un juego desarrollado usando Bevy y Rust. Fue mi primer juego y aprendí mucho sobre ECS, game loop y más."
+    },
+    "forgebytes": {
+      "title": "ForgeBytes Lab",
+      "description": "Esta es la página de inicio de ForgeBytes Lab."
+    },
+    "tubienestar": {
+      "title": "Tu Bienestar Masajes Olavarría",
+      "description": "Esta es una plataforma de reservas para un salón de masajes ubicado en Olavarría, Buenos Aires, Argentina."
+    },
+    "padelink": {
+      "title": "Padelink",
+      "description": "Esta es una plataforma de redes sociales para un club de pádel ubicado en Buenos Aires C.A.B.A, Argentina."
+    },
+    "workitfy": {
+      "title": "Workitfy",
+      "description": "Workitfy es una plataforma social para trabajadores remotos."
+    },
+    "multicuotas": {
+      "title": "Multicuotas Tandíl",
+      "description": "Un e-commerce para una tienda cliente ubicada en Tandíl. Los usuarios pueden buscar productos, ordenar y pagar con MercadoPago"
+    },
+    "bellideportes": {
+      "title": "Belli Deportes",
+      "description": "Un e-commerce para una tienda de deportes ubicada en mi ciudad. Los usuarios pueden buscar productos, ordenar y pagar con MercadoPago"
+    }
+  }
+}
