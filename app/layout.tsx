@@ -7,7 +7,6 @@ import ThemeSwitch from "@/components/theme-switch";
 import { ThemeContextProvider } from "@/context/theme-provider";
 import { Toaster } from "react-hot-toast";
 import React from "react";
-import TranslationsProvider from "@/components/TranslationsProvider";
 import i18nConfig from "@/i18nConfig";
 import { dir } from "i18next";
 

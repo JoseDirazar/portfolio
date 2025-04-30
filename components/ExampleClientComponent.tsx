@@ -5,5 +5,5 @@ import { useTranslation } from "react-i18next";
 export default function ExampleClientComponent() {
   const { t } = useTranslation();
 
-  return <h3>{t("greeting")}</h3>;
+  return <h3>{t("links.home", { ns: "data" })}</h3>;
 }

@@ -2,7 +2,7 @@ import ExampleClientComponent from "@/components/ExampleClientComponent";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "@/app/i18n";
 
-const i18nNamespaces = ["common"];
+const i18nNamespaces = ["common", "data"];
 
 export default async function Home({
   params: { locale },
