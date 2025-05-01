@@ -7,18 +7,21 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "next-themes";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import { getTranslatedData } from "@/lib/data";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { resolvedTheme } = useTheme();
+  const { t } = useTranslation();
+  const { experiencesData } = getTranslatedData(t);
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-2">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>{t("experience.title", { ns: "data" })}</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -59,7 +62,7 @@ export default function Experience() {
                 href={item.url}
                 className="!mt-1 flex items-center justify-center gap-2 bg-neutral-700 px-4 py-2 text-sm font-semibold text-gray-300 hover:bg-neutral-400 hover:text-gray-950 dark:bg-white/10 dark:text-white/90 dark:hover:bg-white/20 dark:hover:text-white md:text-base w-fit rounded"
               >
-                Link <FaArrowCircleRight />
+                {t("projects.view", { ns: "data" })} <FaArrowCircleRight />
               </a>
             </VerticalTimelineElement>
           </React.Fragment>

@@ -7,11 +7,35 @@
   },
   "hero": {
     "title": "Welcome to My Portfolio",
-    "subtitle": "Full Stack Developer"
+    "subtitle": "Full Stack Developer",
+    "greeting": "Hello, I'm Jose.",
+    "role": "full stack developer",
+    "status": "currently looking for a full time job",
+    "recent": "Recently I worked at",
+    "building": "building",
+    "sites": "sites & apps",
+    "focus": "My focus is",
+    "mobile": "Mobile Development with Expo"
   },
   "about": {
     "title": "About Me",
-    "description": "I am a passionate developer with experience in web development."
+    "description": "I am a passionate developer with experience in web development.",
+    "education": "After studying 4 years",
+    "accounting": "Accounting at UNICEN",
+    "passion": "I decided to pursue my passion for programming and enroll in a coding bootcamp learning the current trends on the market to develop",
+    "fullstack": "full stack Apps",
+    "favorite": "My favorite part of programming",
+    "problem": "is the problem solving aspect. I",
+    "love": "love",
+    "feeling": "the feeling of finally figuring out a solution to a problem and learn more every day. My core stack is",
+    "frontend": "React and Next.js",
+    "backend": "Nest.js",
+    "rust": "I am also familiar with Rust and build smart contracts on Stellar network.",
+    "notCoding": "When I'm not coding",
+    "enjoy": "I enjoy researching new trending tecnologies and staying update in the",
+    "tech": "tech",
+    "scene": "scene. Currently I'm learning Bevy: a new fame engine writen in Rust, and learging how to build games. Please check out the next section",
+    "nextSection": "👇"
   },
   "projects": {
     "title": "My Projects",
@@ -22,6 +46,24 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "send": "Send Message"
+    "send": "Send Message",
+    "direct": "Contact me directly at",
+    "or": "or through this form",
+    "success": "Email sent successfully!",
+    "error": "Error sending email"
+  },
+  "experience": {
+    "title": "My experience"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "about": "About this website:",
+    "built": "built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting."
+  },
+  "spaceinvaders": {
+    "title": "Space Invaders Game",
+    "description": "This game was ported into this page thanks to WASM!",
+    "instructions": "Use arrow keys to move and space to shoot",
+    "loading": "Loading game..."
   }
 }

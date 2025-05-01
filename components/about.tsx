@@ -4,9 +4,11 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
   const { ref } = useSectionInView("About");
+  const { t } = useTranslation();
 
   return (
     <motion.section
@@ -17,29 +19,26 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>{t("about.title")}</SectionHeading>
       <p className="mb-3">
-        After studying 4 years{" "}
-        <span className="font-medium">Accounting at UNICEN</span>, I decided to
-        pursue my passion for programming and enroll in a coding bootcamp
-        learning the current trends on the market to develop{" "}
-        <span className="font-medium">full stack Apps</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem and learn more
-        every day. My core stack is{" "}
-        <span className="font-medium">React and Next.js</span> for the frontend
-        and <span className="font-medium">Nest.js</span> for the backend . I am
-        also familiar with Rust and build smart contracts on Stellar network.
+        {t("about.education")}{" "}
+        <span className="font-medium">{t("about.accounting")}</span>,{" "}
+        {t("about.passion")}{" "}
+        <span className="font-medium">{t("about.fullstack")}</span>.{" "}
+        <span className="italic">{t("about.favorite")}</span>{" "}
+        {t("about.problem")}{" "}
+        <span className="underline">{t("about.love")}</span>{" "}
+        {t("about.feeling")}{" "}
+        <span className="font-medium">{t("about.frontend")}</span>{" "}
+        {t("about.backend")}. {t("about.rust")}
       </p>
 
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy
-        researching new trending tecnologies and staying update in the{" "}
-        <span className="font-medium">tech</span> scene. Currently I&apos;m
-        learning Bevy: a new fame engine writen in Rust, and learging how to
-        build games. Please check out the next section{" "}
-        <span className="font-medium">👇</span>.
+        <span className="italic">{t("about.notCoding")}</span>,{" "}
+        {t("about.enjoy")}{" "}
+        <span className="font-medium">{t("about.tech")}</span>{" "}
+        {t("about.scene")}{" "}
+        <span className="font-medium">{t("about.nextSection")}</span>.
       </p>
     </motion.section>
   );

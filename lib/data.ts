@@ -48,72 +48,76 @@ import spaceInvaders from "@/public/space-invaders.png";
 import deAcaFarmaciasDeTurno from "@/public/de-aca-farmacias-de-turno.png";
 import pawdlink from "@/public/pawdlink.png";
 
+export const i18nNamespaces = ["common", "data"];
+
 // This function will be used to get translated data
-export const getTranslatedData = (t: (key: string) => string) => ({
+export const getTranslatedData = (
+  t: (key: string, options?: { ns: string }) => string
+) => ({
   links: [
     {
-      name: t("data:links.home"),
+      name: t("links.home", { ns: "data" }),
       hash: "#home",
     },
     {
-      name: t("data:links.about"),
+      name: t("links.about", { ns: "data" }),
       hash: "#about",
     },
     {
-      name: t("data:links.projects"),
+      name: t("links.projects", { ns: "data" }),
       hash: "#projects",
     },
     {
-      name: t("data:links.skills"),
+      name: t("links.skills", { ns: "data" }),
       hash: "#skills",
     },
     {
-      name: t("data:links.experience"),
+      name: t("links.experience", { ns: "data" }),
       hash: "#experience",
     },
     {
-      name: t("data:links.contact"),
+      name: t("links.contact", { ns: "data" }),
       hash: "#contact",
     },
   ],
 
   experiencesData: [
     {
-      title: t("data:experiences.forgebytes.title"),
-      location: t("data:experiences.forgebytes.location"),
-      description: t("data:experiences.forgebytes.description"),
+      title: t("experiences.forgebytes.title", { ns: "data" }),
+      location: t("experiences.forgebytes.location", { ns: "data" }),
+      description: t("experiences.forgebytes.description", { ns: "data" }),
       icon: React.createElement(CgWorkAlt),
       date: "Since Jan - 2025",
       url: "https://forgebyteslab.com/",
     },
     {
-      title: t("data:experiences.biggertech.title"),
-      location: t("data:experiences.biggertech.location"),
-      description: t("data:experiences.biggertech.description"),
+      title: t("experiences.biggertech.title", { ns: "data" }),
+      location: t("experiences.biggertech.location", { ns: "data" }),
+      description: t("experiences.biggertech.description", { ns: "data" }),
       icon: React.createElement(CgWorkAlt),
       date: "May - 2024 | Mar - 2025",
       url: "https://www.biggertech.co/",
     },
     {
-      title: t("data:experiences.mayland.title"),
-      location: t("data:experiences.mayland.location"),
-      description: t("data:experiences.mayland.description"),
+      title: t("experiences.mayland.title", { ns: "data" }),
+      location: t("experiences.mayland.location", { ns: "data" }),
+      description: t("experiences.mayland.description", { ns: "data" }),
       icon: React.createElement(CgWorkAlt),
       date: "Nov - 2023 | May - 2024",
       url: "https://www.maylandlabs.com/",
     },
     {
-      title: t("data:experiences.henry.title"),
-      location: t("data:experiences.henry.location"),
-      description: t("data:experiences.henry.description"),
+      title: t("experiences.henry.title", { ns: "data" }),
+      location: t("experiences.henry.location", { ns: "data" }),
+      description: t("experiences.henry.description", { ns: "data" }),
       icon: React.createElement(LuGraduationCap),
       date: "Apr - 2023 | Sep - 2023",
       url: "https://certificates.soyhenry.com/new-cert?id=2ca8a03c45ac77da0e6ddb9ccb624fdfe0a3b3c73bed6be0413138c267683122",
     },
     {
-      title: t("data:experiences.freecodecamp.title"),
-      location: t("data:experiences.freecodecamp.location"),
-      description: t("data:experiences.freecodecamp.description"),
+      title: t("experiences.freecodecamp.title", { ns: "data" }),
+      location: t("experiences.freecodecamp.location", { ns: "data" }),
+      description: t("experiences.freecodecamp.description", { ns: "data" }),
       icon: React.createElement(LuGraduationCap),
       url: "https://www.freecodecamp.org/certification/fcce44b564a-4071-40f3-a9b8-537a761d8ec5/javascript-algorithms-and-data-structures",
       date: "Nov - 2022 | Apr - 2023",
@@ -122,8 +126,8 @@ export const getTranslatedData = (t: (key: string) => string) => ({
 
   projectsData: [
     {
-      title: t("data:projects.pawdlink.title"),
-      description: t("data:projects.pawdlink.description"),
+      title: t("projects.pawdlink.title", { ns: "data" }),
+      description: t("projects.pawdlink.description", { ns: "data" }),
       tags: [
         "Vite.js",
         "React v19",
@@ -135,29 +139,29 @@ export const getTranslatedData = (t: (key: string) => string) => ({
       url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
     },
     {
-      title: t("data:projects.deaca.title"),
-      description: t("data:projects.deaca.description"),
+      title: t("projects.deaca.title", { ns: "data" }),
+      description: t("projects.deaca.description", { ns: "data" }),
       tags: ["Vite.js", "Python", "React", "TailwindCSS V4", "Google OAuth"],
       imageUrl: deAcaFarmaciasDeTurno,
       url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
     },
     {
-      title: t("data:projects.spaceinvaders.title"),
-      description: t("data:projects.spaceinvaders.description"),
+      title: t("projects.spaceinvaders.title", { ns: "data" }),
+      description: t("projects.spaceinvaders.description", { ns: "data" }),
       tags: ["Rust", "Bevy", "WASM"],
       imageUrl: spaceInvaders,
       url: "/space-invaders",
     },
     {
-      title: t("data:projects.forgebytes.title"),
-      description: t("data:projects.forgebytes.description"),
+      title: t("projects.forgebytes.title", { ns: "data" }),
+      description: t("projects.forgebytes.description", { ns: "data" }),
       tags: ["React", "TypeScript", "Vite.js", "TailwindCss"],
       imageUrl: forgebyteslab,
       url: "https://forgebyteslab.com/",
     },
     {
-      title: t("data:projects.tubienestar.title"),
-      description: t("data:projects.tubienestar.description"),
+      title: t("projects.tubienestar.title", { ns: "data" }),
+      description: t("projects.tubienestar.description", { ns: "data" }),
       tags: [
         "React",
         "TypeScript",
@@ -170,8 +174,8 @@ export const getTranslatedData = (t: (key: string) => string) => ({
       url: "https://tu-bienestar.forgebyteslab.com/",
     },
     {
-      title: t("data:projects.padelink.title"),
-      description: t("data:projects.padelink.description"),
+      title: t("projects.padelink.title", { ns: "data" }),
+      description: t("projects.padelink.description", { ns: "data" }),
       tags: [
         "React",
         "TypeScript",
@@ -185,8 +189,8 @@ export const getTranslatedData = (t: (key: string) => string) => ({
       url: "https://www.padelink.com.ar/",
     },
     {
-      title: t("data:projects.workitfy.title"),
-      description: t("data:projects.workitfy.description"),
+      title: t("projects.workitfy.title", { ns: "data" }),
+      description: t("projects.workitfy.description", { ns: "data" }),
       tags: [
         "React",
         "TypeScript",
@@ -197,21 +201,37 @@ export const getTranslatedData = (t: (key: string) => string) => ({
         "Google OAuth",
       ],
       imageUrl: workitfy,
-      url: "https://workitfy.maylandlabs.com/",
+      url: "https://workitfy.forgebyteslab.com/",
     },
     {
-      title: t("data:projects.multicuotas.title"),
-      description: t("data:projects.multicuotas.description"),
-      tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
+      title: t("projects.multicuotas.title", { ns: "data" }),
+      description: t("projects.multicuotas.description", { ns: "data" }),
+      tags: [
+        "React",
+        "TypeScript",
+        "Nest.js",
+        "TailwindCss",
+        "TypeORM",
+        "Vite.js",
+        "MercadoPago",
+      ],
       imageUrl: multicuotasTandil,
-      url: "https://multicuotas-tandil.vercel.app/",
+      url: "https://multicuotas-tandil.forgebyteslab.com/",
     },
     {
-      title: t("data:projects.bellideportes.title"),
-      description: t("data:projects.bellideportes.description"),
-      tags: ["React", "TypeScript", "Next.js", "TailwindCss", "Prisma"],
+      title: t("projects.bellideportes.title", { ns: "data" }),
+      description: t("projects.bellideportes.description", { ns: "data" }),
+      tags: [
+        "React",
+        "TypeScript",
+        "Nest.js",
+        "TailwindCss",
+        "TypeORM",
+        "Vite.js",
+        "MercadoPago",
+      ],
       imageUrl: BelliDeportes,
-      url: "https://belli-deportes.vercel.app/",
+      url: "https://bellideportes.forgebyteslab.com/",
     },
   ],
 });

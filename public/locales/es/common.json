@@ -7,11 +7,35 @@
   },
   "hero": {
     "title": "Bienvenido a Mi Portafolio",
-    "subtitle": "Desarrollador Full Stack"
+    "subtitle": "Desarrollador Full Stack",
+    "greeting": "Hola, soy Jose.",
+    "role": "desarrollador full stack",
+    "status": "actualmente buscando trabajo a tiempo completo",
+    "recent": "Recientemente trabajé en",
+    "building": "construyendo",
+    "sites": "sitios y aplicaciones",
+    "focus": "Mi enfoque es",
+    "mobile": "Desarrollo Móvil con Expo"
   },
   "about": {
     "title": "Sobre Mí",
-    "description": "Soy un desarrollador apasionado con experiencia en desarrollo web."
+    "description": "Soy un desarrollador apasionado con experiencia en desarrollo web.",
+    "education": "Después de estudiar 4 años",
+    "accounting": "Contabilidad en UNICEN",
+    "passion": "decidí perseguir mi pasión por la programación y me inscribí en un bootcamp de programación aprendiendo las tendencias actuales del mercado para desarrollar",
+    "fullstack": "aplicaciones full stack",
+    "favorite": "Mi parte favorita de la programación",
+    "problem": "es el aspecto de resolución de problemas. Me",
+    "love": "encanta",
+    "feeling": "la sensación de finalmente encontrar una solución a un problema y aprender más cada día. Mi stack principal es",
+    "frontend": "React y Next.js",
+    "backend": "Nest.js",
+    "rust": "También estoy familiarizado con Rust y construyo contratos inteligentes en la red Stellar.",
+    "notCoding": "Cuando no estoy programando",
+    "enjoy": "disfruto investigando nuevas tecnologías y manteniéndome actualizado en la",
+    "tech": "escena tecnológica",
+    "scene": ". Actualmente estoy aprendiendo Bevy: un nuevo motor de juegos escrito en Rust, y aprendiendo a construir juegos. Por favor revisa la siguiente sección",
+    "nextSection": "👇"
   },
   "projects": {
     "title": "Mis Proyectos",
@@ -22,6 +46,24 @@
     "name": "Nombre",
     "email": "Correo Electrónico",
     "message": "Mensaje",
-    "send": "Enviar Mensaje"
+    "send": "Enviar Mensaje",
+    "direct": "Contáctame directamente a",
+    "or": "o a través de este formulario",
+    "success": "¡Correo enviado exitosamente!",
+    "error": "Error al enviar el correo"
+  },
+  "experience": {
+    "title": "Mi experiencia"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "about": "Sobre este sitio web:",
+    "built": "construido con React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, alojamiento en Vercel."
+  },
+  "spaceinvaders": {
+    "title": "Juego Space Invaders",
+    "description": "¡Este juego fue portado a esta página gracias a WASM!",
+    "instructions": "Usa las flechas para moverte y espacio para disparar",
+    "loading": "Cargando juego..."
   }
 }

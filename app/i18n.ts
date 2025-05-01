@@ -9,7 +9,6 @@ export default async function initTranslations(
   i18nInstance?: I18nInstance,
   resources?: any
 ) {
-  console.log(namespaces);
   i18nInstance = i18nInstance || createInstance();
 
   i18nInstance.use(initReactI18next);

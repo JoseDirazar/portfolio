@@ -10,11 +10,13 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { BiggerLogo } from "@/public/BiggerLogo";
 import { useTheme } from "next-themes";
+import { useTranslation } from "react-i18next";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { resolvedTheme } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <section
@@ -64,9 +66,8 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Jose.</span> I&apos;m a{" "}
-        <span className="font-bold">full stack developer</span> currently
-        looking for a full time job. Recently I worked at{" "}
+        <span className="font-bold">{t("hero.greeting")}</span> {t("hero.role")}{" "}
+        {t("hero.status")}. {t("hero.recent")}{" "}
         <Link
           href="https://www.biggertech.co/"
           target="_blank"
@@ -74,9 +75,9 @@ export default function Intro() {
         >
           <BiggerLogo theme={resolvedTheme} />
         </Link>
-        , building <span className="italic">sites & apps</span> for clients. My
-        focus is <span className="underline">Mobile Development with Expo</span>
-        .
+        , {t("hero.building")} <span className="italic">{t("hero.sites")}</span>
+        . {t("hero.focus")}{" "}
+        <span className="underline">{t("hero.mobile")}</span>.
       </motion.h1>
 
       <motion.div
@@ -96,7 +97,7 @@ export default function Intro() {
               setTimeOfLastClick(Date.now());
             }}
           >
-            Contact{" "}
+            {t("navigation.contact")}{" "}
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
 

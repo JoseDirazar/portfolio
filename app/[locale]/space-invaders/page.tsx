@@ -1,15 +1,15 @@
-import ExampleClientComponent from "@/components/ExampleClientComponent";
+import SpaceInvaders from "@/components/space-invaders";
+import { SiBevy, SiRust } from "react-icons/si";
+import { BiSolidInvader } from "react-icons/bi";
 import TranslationsProvider from "@/components/TranslationsProvider";
+import { i18nNamespaces } from "@/lib/data";
 import initTranslations from "@/app/i18n";
 
-const i18nNamespaces = ["common", "data"];
-
-export default async function Home({
+export default async function SpaceInvadersPage({
   params: { locale },
 }: {
   params: { locale: string };
 }) {
-  console.log("LOCALE::", locale);
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
@@ -18,10 +18,7 @@ export default async function Home({
       locale={locale}
       resources={resources}
     >
-      <main className={""}>
-        <h1>{t("hero.title")}</h1>
-        <ExampleClientComponent />
-      </main>
+      <SpaceInvaders />
     </TranslationsProvider>
   );
 }

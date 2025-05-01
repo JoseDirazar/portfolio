@@ -2,16 +2,19 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { projectsData } from "@/lib/data";
+import { getTranslatedData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
+  const { t } = useTranslation();
+  const { projectsData } = getTranslatedData(t);
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>My projects</SectionHeading>
+      <SectionHeading>{t("projects.title", { ns: "data" })}</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
