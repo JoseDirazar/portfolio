@@ -1,6 +1,4 @@
 import SpaceInvaders from "@/components/space-invaders";
-import { SiBevy, SiRust } from "react-icons/si";
-import { BiSolidInvader } from "react-icons/bi";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import { i18nNamespaces } from "@/lib/data";
 import initTranslations from "@/app/i18n";

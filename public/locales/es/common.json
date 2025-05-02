@@ -63,7 +63,7 @@
   "spaceinvaders": {
     "title": "Juego Space Invaders",
     "description": "¡Este juego fue portado a esta página gracias a WASM!",
-    "instructions": "Usa las flechas para moverte y espacio para disparar",
+    "instructions": "Usa A y D para moverte y espacio para disparar",
     "loading": "Cargando juego..."
   }
 }

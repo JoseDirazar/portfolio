@@ -1,4 +1,3 @@
-import ExampleClientComponent from "@/components/ExampleClientComponent";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "@/app/i18n";
 import Header from "@/components/header";

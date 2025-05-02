@@ -63,7 +63,7 @@
   "spaceinvaders": {
     "title": "Space Invaders Game",
     "description": "This game was ported into this page thanks to WASM!",
-    "instructions": "Use arrow keys to move and space to shoot",
+    "instructions": "Use A, D keys to move and space to shoot",
     "loading": "Loading game..."
   }
 }
