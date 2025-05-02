@@ -1,23 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const locales = ["en", "es"]; // agrega 'es' si aún no lo habías hecho
-const defaultLocale = "en"; // o el idioma por defecto que quieras
+const locales = ["en", "es"];
+const defaultLocale = "en";
 
-function getLocale(request: NextRequest) {
-  // Detectar idioma preferido del navegador
-  const acceptLang = request.headers.get("accept-language");
-  if (!acceptLang) return defaultLocale;
+function getPreferredLocale(request: NextRequest): string {
+  const acceptLanguage = request.headers.get("accept-language");
+  if (!acceptLanguage) return defaultLocale;
 
-  const preferredLanguages = acceptLang
+  const preferredLanguages = acceptLanguage
     .split(",")
     .map((lang) => lang.split(";")[0].trim());
 
-  // Buscar la primera coincidencia con nuestras locales soportadas
   for (const lang of preferredLanguages) {
     if (locales.includes(lang)) {
       return lang;
     }
-    // Buscar solo el código base (por ejemplo 'es' de 'es-AR')
+
     const baseLang = lang.split("-")[0];
     if (locales.includes(baseLang)) {
       return baseLang;
@@ -30,36 +28,20 @@ function getLocale(request: NextRequest) {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Ignorar rutas internas (_next, api, etc.)
-  if (
-    pathname.startsWith("/_next") ||
-    pathname.startsWith("/api") ||
-    pathname.includes(".")
-  ) {
-    return;
+  // Solo redirigir si la ruta es exactamente "/"
+  if (pathname === "/") {
+    const locale = getPreferredLocale(request);
+
+    // Redirigir a /[locale]
+    const url = request.nextUrl.clone();
+    url.pathname = `/${locale}`;
+    return NextResponse.redirect(url);
   }
 
-  // Verificar si la ruta ya tiene prefijo de idioma
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
-
-  if (pathnameHasLocale) {
-    return;
-  }
-
-  // Obtener el idioma y redirigir
-  const locale = getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
+  // No hacer nada si ya hay un locale en la ruta o si es una ruta distinta
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: [
-    /*
-     * Aplicar el middleware solo a las rutas necesarias.
-     * Evita rutas internas y estáticas.
-     */
-    "/((?!_next|api|static|favicon.ico|robots.txt).*)",
-  ],
+  matcher: ["/"],
 };

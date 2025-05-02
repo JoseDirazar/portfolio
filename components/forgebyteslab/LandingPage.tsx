@@ -13,7 +13,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section
         id="home"
-        className="from-secondary to-primary relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b px-4"
+        className="relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b px-4"
       >
         <div className="mx-auto max-w-4xl space-y-8 text-center">
           <h1 className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text pb-3 text-6xl font-extrabold tracking-tighter text-transparent md:text-7xl lg:text-8xl">
@@ -26,7 +26,6 @@ export default function LandingPage() {
             {t("hero.description", { ns: "forgebytes" })}
           </p>
         </div>
-        <BlurBackground />
       </section>
 
       {/* Services Section */}

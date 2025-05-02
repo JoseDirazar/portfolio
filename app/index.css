@@ -2,12 +2,64 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@layer base {
+  :root {
+    --color-primary: oklch(0.21 0.034 264.665);
+    --color-secondary: oklch(0.278 0.033 256.848);
+  }
+}
 @theme {
+  --color-primary: oklch(0.21 0.034 264.665);
+  --color-secondary: oklch(0.278 0.033 256.848);
   --color-gradient-radial: radial-gradient(var(--tw-gradient-stops))
-    --color-gradient-conic: conic-gradient(
-      from 180deg at 50% 50%,
-      var(--tw-gradient-stops)
-    );
+  --color-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+
+  --font-lobster: "Lobster", sans-serif;
+  --font-josefin: "Josefin Sans" sans-serif;
+  --font-monserrat: "Monserrat Italic" sans-serif;
+  --font-orbitron: "Orbitron Extrabold";
+  --font-nueva: "Nueva Std", sans-serif;
+}
+
+@font-face {
+  font-family: "Nueva Std";
+  src: url("/assets/fonts/NuevaStd/NuevaStd-Bold.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Orbitron Extrabold";
+  src: url("/assets/fonts/Orbitron/static/Orbitron-ExtraBold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monserrat Italic";
+  src: url("/assets/fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/Josefin_Sans/static/JosefinSans-BoldItalic.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: url("/assets/fonts/Lobster-Regular.ttf") format("truetype");
+  font-weight: regular;
+  font-style: normal;
 }
 
 html {

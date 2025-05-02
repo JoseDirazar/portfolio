@@ -27,29 +27,37 @@ export const ClientsSection = () => {
               className="transition-shadow duration-300 hover:shadow-xl"
             >
               <CardContent>
-                <div className="flex items-center justify-between">
-                  <CardHeader
-                    title={t(`clients.projects.${clientId}.name`, {
-                      ns: "forgebyteslab",
-                    })}
-                    className={`${t(`clients.projects.${clientId}.font`, { ns: "forgebytes" })}`}
-                  />
+                <div className="flex h-24 items-center justify-start lg:h-36">
+                  {" "}
+                  {clientId === "client4" && (
+                    <h3
+                      className={`${t(`clients.projects.${clientId}.font`, { ns: "forgebytes" })} text-2xl text-white lg:text-5xl`}
+                    >
+                      {t(`clients.projects.${clientId}.name`, {
+                        ns: "forgebytes",
+                      })}
+                    </h3>
+                  )}
                   <img
-                    src={t(`clients.projects.${clientId}.img'}`)}
-                    alt={t(`clients.projects.${clientId}.name'}`)}
-                    className={`object-cover ${clientId === "client4" ? "w-16 lg:w-28" : "w-24 lg:w-42"}`}
+                    src={t(`clients.projects.${clientId}.img`, {
+                      ns: "forgebytes",
+                    })}
+                    alt={t(`clients.projects.${clientId}.name`, {
+                      ns: "forgebytes",
+                    })}
+                    className={`object-cover ${clientId === "client4" ? "w-24 lg:w-28" : clientId === "client1" ? "w-42 lg:w-60" : "w-36 lg:w-54"}`}
                   />
                 </div>
                 <p className="mb-4 text-gray-600 dark:text-gray-300">
                   {t(`clients.projects.${clientId}.description`, {
-                    ns: "forgebyteslab",
+                    ns: "forgebytes",
                   })}
                 </p>
                 <A
                   variant="outline"
                   size="sm"
                   href={t(`clients.projects.${clientId}.url`, {
-                    ns: "forgebyteslab",
+                    ns: "forgebytes",
                   })}
                 >
                   {t("clients.viewProject", { ns: "forgebytes" })}

@@ -40,7 +40,7 @@
       "client1": {
         "name": "Pawdlink",
         "description": "Red social para cuidadores de mascotas, dueños y amantes de los animales",
-        "img": "/pawdlink-logo.svg",
+        "img": "/forgebyteslab/pawdlink-logo.svg",
         "url": "https://pawdlink-web.forgebyteslab.com/",
         "technologies": "React, Node.js, MongoDB",
         "font": "font-monserrat font-extrabold italic"
@@ -48,7 +48,7 @@
       "client2": {
         "name": "deacá",
         "description": "Guía de comercios que destaca negocios de alimentación saludable",
-        "img": "/deaca-white-logo-flex-row.png",
+        "img": "/forgebyteslab/deaca-white-logo-flex-row.png",
         "url": "https://deaca-farmacias-de-turno.forgebyteslab.com/",
         "technologies": "Vue.js, Python, PostgreSQL",
         "font": "font-nueva font-bold "
@@ -56,7 +56,7 @@
       "client3": {
         "name": "Belli Deportes",
         "description": "Tienda deportiva online para comprar equipamiento y ropa deportiva",
-        "img": "/belli-deportes-logo-no-bg.png",
+        "img": "/forgebyteslab/belli-deportes-logo-no-bg.png",
         "url": "https://belli-deportes.forgebyteslab.com/",
         "technologies": "Angular, .NET, SQL Server",
         "font": "font-orbitron font-extrabold tracking-wide"
@@ -64,7 +64,7 @@
       "client4": {
         "name": "Tu Bienestar",
         "description": "Salón de masajes para gestionar turnos y servicios",
-        "img": "/sa-massages-logo.png",
+        "img": "/forgebyteslab/sa-massages-logo.png",
         "url": "https://tu-bienestar.forgebyteslab.com/",
         "technologies": "React, Go, TimescaleDB",
         "font": "font-lobster"
@@ -79,8 +79,8 @@
         "name": "José Dirazar",
         "role": "Desarrollador Web, Mobile y DevOps en ForgeBytesLab",
         "description": "Soy un desarrollador de software apasionado, dedicado a transformar ideas de los clientes en soluciones confiables, eficientes y de alta calidad.",
-        "avatar": "/jose-avatar.jpg",
-        "href": "https://jose-dirazar.forgebyteslab.com"
+        "avatar": "/forgebyteslab/jose-avatar.jpg",
+        "href": "/es/jose-dirazar/portfolio"
       }
     }
   },

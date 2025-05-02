@@ -11,9 +11,10 @@ import { dir } from "i18next";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// TODO change metadata
 export const metadata: Metadata = {
-  title: "Jose Di Razar | Portfolio",
-  description: "Full Stack Developer Portfolio",
+  title: "ForgeBytes Lab Software Development",
+  description: "Extend your business with custom technological solutions.",
 };
 
 export function generateStaticParams() {
@@ -42,9 +43,6 @@ export default async function RootLayout({
           <div className="absolute top-[-1rem] left-[-35rem] -z-10 h-[31.25rem] w-[50rem] rounded-full bg-[#dbd7fb] blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
           <ActiveSectionContextProvider>
             {children}
-            {/* <TranslationsProvider locale="en" namespaces={["common", "data"]}>
-            </TranslationsProvider> */}
-
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
