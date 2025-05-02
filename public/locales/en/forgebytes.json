@@ -1,0 +1,105 @@
+{
+  "common": {
+    "language": "Language",
+    "contact": "Contact",
+    "send": "Send",
+    "email": "Email",
+    "or": "Or",
+    "writeYourOwn": "Write your own"
+  },
+  "hero": {
+    "title": "ForgeBytes Lab",
+    "subtitle": "Where innovation meets creativity",
+    "description": "Take your buisiness to the next level making an application that fits your needs."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Custom technological solutions for your business",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "We create modern and scalable web applications using the latest technologies."
+    },
+    "mobileDevelopment": {
+      "title": "Mobile Development",
+      "description": "We develop native and hybrid mobile applications for iOS and Android."
+    },
+    "itConsulting": {
+      "title": "IT Consulting",
+      "description": "Expert advice on software architecture and best practices."
+    },
+    "devops": {
+      "title": "DevOps",
+      "description": "Automation of development, deployment, and monitoring processes."
+    }
+  },
+  "clients": {
+    "title": "Our Clients",
+    "subtitle": "Success stories and digital transformations",
+    "viewProject": "View Project",
+    "projects": {
+      "client1": {
+        "name": "PAWDLINK",
+        "description": "Social network for pet sitters, pet owners, and pet lovers",
+        "img": "/pawdlink-logo.svg",
+        "url": "https://pawdlink-web.forgebyteslab.com/",
+        "technologies": "React, Node.js, MongoDB",
+        "font": "font-monserrat font-extrabold italic"
+      },
+      "client2": {
+        "name": "deacá",
+        "description": "Guide to shops highlighting healthy food businesses",
+        "img": "/deaca-white-logo-flex-row.png",
+        "url": "https://deaca-farmacias-de-turno.forgebyteslab.com/",
+        "technologies": "Vue.js, Python, PostgreSQL",
+        "font": "font-nueva font-bold text-7xl"
+      },
+      "client3": {
+        "name": "Belli Deportes",
+        "description": "Sports e-commerce where users can buy sports equipment and clothing",
+        "img": "/belli-deportes-logo-no-bg.png",
+        "url": "https://belli-deportes.forgebyteslab.com/",
+        "technologies": "Angular, .NET, SQL Server",
+        "font": "font-orbitron font-extrabold tracking-wide"
+      },
+      "client4": {
+        "name": "Tu Bienestar",
+        "description": "Massage saloon to manage appointments and services",
+        "img": "/sa-massages-logo.png",
+        "url": "https://tu-bienestar.forgebyteslab.com/",
+        "technologies": "React, Go, TimescaleDB",
+        "font": "font-lobster"
+      }
+    }
+  },
+  "team": {
+    "title": "ForgeBytes Team",
+    "subtitle": "Meet the professionals behind our projects",
+    "devs": {
+      "dev1": {
+        "name": "José Dirazar",
+        "role": "ForgeBytesLab DevOps, Web and Mobile Developer",
+        "description": "I am a passionate software developer dedicated to transforming client's ideas into reliable, efficient, and high-quality software.",
+        "avatar": "/jose-avatar.jpg",
+        "href": "https://jose-dirazar.forgebyteslab.com"
+      }
+    }
+  },
+  "contact": {
+    "title": "Do you have a project in mind?",
+    "subtitle": "Contact us and let's talk about how we can help you",
+    "form": {
+      "title": "Contact Us",
+      "subtitle": "We're here to answer your questions",
+      "email": "Email address",
+      "frequentQuestions": "Frequent Questions",
+      "customQuestion": "Write your own question",
+      "questions": {
+        "services": "What are your main services?",
+        "process": "What is your development process?",
+        "experience": "Do you have experience in my industry?",
+        "pricing": "What are your rates?",
+        "timeline": "How long does a typical project take?"
+      }
+    }
+  }
+}

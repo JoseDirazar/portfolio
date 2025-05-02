@@ -1,4 +1,4 @@
-import SpaceInvaders from "@/components/space-invaders";
+import SpaceInvaders from "@/components/jose-dirazar/games/space-invaders/space-invaders";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import { i18nNamespaces } from "@/lib/data";
 import initTranslations from "@/app/i18n";

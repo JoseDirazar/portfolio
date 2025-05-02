@@ -1,0 +1,105 @@
+{
+  "common": {
+    "language": "Idioma",
+    "contact": "Contacto",
+    "send": "Enviar",
+    "email": "Correo electrónico",
+    "or": "O",
+    "writeYourOwn": "Escribe tu propia"
+  },
+  "hero": {
+    "title": "ForgeBytes Lab",
+    "subtitle": "Donde la innovación se encuentra con la creatividad",
+    "description": "Lleva tu negocio al siguiente nivel creando una aplicación que se adapte a tus necesidades."
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones tecnológicas a medida para tu negocio",
+    "webDevelopment": {
+      "title": "Desarrollo Web",
+      "description": "Creamos aplicaciones web modernas y escalables utilizando las últimas tecnologías."
+    },
+    "mobileDevelopment": {
+      "title": "Desarrollo Móvil",
+      "description": "Desarrollamos aplicaciones móviles nativas e híbridas para iOS y Android."
+    },
+    "itConsulting": {
+      "title": "Consultoría IT",
+      "description": "Asesoramiento experto en arquitectura de software y mejores prácticas."
+    },
+    "devops": {
+      "title": "DevOps",
+      "description": "Automatización de procesos de desarrollo, despliegue y monitoreo."
+    }
+  },
+  "clients": {
+    "title": "Nuestros Clientes",
+    "subtitle": "Historias de éxito y transformaciones digitales",
+    "viewProject": "Ver Proyecto",
+    "projects": {
+      "client1": {
+        "name": "Pawdlink",
+        "description": "Red social para cuidadores de mascotas, dueños y amantes de los animales",
+        "img": "/pawdlink-logo.svg",
+        "url": "https://pawdlink-web.forgebyteslab.com/",
+        "technologies": "React, Node.js, MongoDB",
+        "font": "font-monserrat font-extrabold italic"
+      },
+      "client2": {
+        "name": "deacá",
+        "description": "Guía de comercios que destaca negocios de alimentación saludable",
+        "img": "/deaca-white-logo-flex-row.png",
+        "url": "https://deaca-farmacias-de-turno.forgebyteslab.com/",
+        "technologies": "Vue.js, Python, PostgreSQL",
+        "font": "font-nueva font-bold "
+      },
+      "client3": {
+        "name": "Belli Deportes",
+        "description": "Tienda deportiva online para comprar equipamiento y ropa deportiva",
+        "img": "/belli-deportes-logo-no-bg.png",
+        "url": "https://belli-deportes.forgebyteslab.com/",
+        "technologies": "Angular, .NET, SQL Server",
+        "font": "font-orbitron font-extrabold tracking-wide"
+      },
+      "client4": {
+        "name": "Tu Bienestar",
+        "description": "Salón de masajes para gestionar turnos y servicios",
+        "img": "/sa-massages-logo.png",
+        "url": "https://tu-bienestar.forgebyteslab.com/",
+        "technologies": "React, Go, TimescaleDB",
+        "font": "font-lobster"
+      }
+    }
+  },
+  "team": {
+    "title": "Equipo de ForgeBytes",
+    "subtitle": "Conoce a los profesionales detrás de nuestros proyectos",
+    "devs": {
+      "dev1": {
+        "name": "José Dirazar",
+        "role": "Desarrollador Web, Mobile y DevOps en ForgeBytesLab",
+        "description": "Soy un desarrollador de software apasionado, dedicado a transformar ideas de los clientes en soluciones confiables, eficientes y de alta calidad.",
+        "avatar": "/jose-avatar.jpg",
+        "href": "https://jose-dirazar.forgebyteslab.com"
+      }
+    }
+  },
+  "contact": {
+    "title": "¿Tienes un proyecto en mente?",
+    "subtitle": "Contáctanos y hablemos sobre cómo podemos ayudarte",
+    "form": {
+      "title": "Contáctanos",
+      "subtitle": "Estamos aquí para responder tus preguntas",
+      "email": "Correo electrónico",
+      "frequentQuestions": "Preguntas frecuentes",
+      "customQuestion": "Escribe tu propia pregunta",
+      "questions": {
+        "services": "¿Cuáles son sus servicios principales?",
+        "process": "¿Cuál es su proceso de desarrollo?",
+        "experience": "¿Tienen experiencia en mi industria?",
+        "pricing": "¿Cuáles son sus tarifas?",
+        "timeline": "¿Cuánto tiempo toma un proyecto típico?"
+      }
+    }
+  }
+}

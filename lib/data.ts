@@ -48,11 +48,11 @@ import spaceInvaders from "@/public/space-invaders.png";
 import deAcaFarmaciasDeTurno from "@/public/de-aca-farmacias-de-turno.png";
 import pawdlink from "@/public/pawdlink.png";
 
-export const i18nNamespaces = ["common", "data"];
+export const i18nNamespaces = ["common", "data", "forgebytes"];
 
 // This function will be used to get translated data
 export const getTranslatedData = (
-  t: (key: string, options?: { ns: string }) => string
+  t: (key: string, options?: { ns: string }) => string,
 ) => ({
   links: [
     {
