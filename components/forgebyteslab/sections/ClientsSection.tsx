@@ -8,7 +8,7 @@ export const ClientsSection = () => {
   const projects = ["client1", "client2", "client3", "client4"];
 
   return (
-    <section className="bg-white py-20 dark:bg-gray-800">
+    <section className="rounded-lg bg-white py-20 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">

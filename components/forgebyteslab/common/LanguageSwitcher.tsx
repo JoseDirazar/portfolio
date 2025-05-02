@@ -1,20 +1,22 @@
 "use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
 const LANGUAGES = [
   { code: "en", name: "English" },
   { code: "es", name: "Español" },
-  { code: "it", name: "Italiano" },
 ];
 
-export const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
-  const [menuOpen, setMenuOpen] = useState(false);
-  const handleLanguageChange = (languageCode: string) => {
-    i18n.changeLanguage(languageCode);
-  };
+export const LanguageSwitcher = ({ contentTop }: { contentTop?: boolean }) => {
+  const pathname = usePathname();
 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [_, currentLang, ...rest] = pathname.split("/");
+  function buildPath(code: string) {
+    if (rest) return "/" + code + "/" + rest.join("/");
+    return "/" + code;
+  }
   return (
     <div className="relative">
       <button
@@ -22,7 +24,7 @@ export const LanguageSwitcher = () => {
         onClick={() => setMenuOpen((prev) => !prev)}
       >
         <span>
-          {LANGUAGES.find((lang) => lang.code === i18n.language)?.name ||
+          {LANGUAGES.find((lang) => lang.code === currentLang)?.name ||
             "English"}
         </span>
         <svg
@@ -40,7 +42,7 @@ export const LanguageSwitcher = () => {
         </svg>
       </button>
       <div
-        className={`ring-opacity-5 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-lg ring-1 ring-black dark:bg-gray-800 ${
+        className={`absolute z-[9999] px-1 ring-2 ring-neutral-300 dark:ring-neutral-700 ${contentTop ? "bottom-full left-0 origin-top" : "right-0"} mt-2 w-40 rounded-md bg-white shadow-lg ring-1 ring-black dark:bg-gray-800 ${
           menuOpen ? "block" : "hidden"
         }`}
       >
@@ -51,18 +53,18 @@ export const LanguageSwitcher = () => {
           aria-labelledby="options-menu"
         >
           {LANGUAGES.map((language) => (
-            <button
+            <Link
               key={language.code}
-              onClick={() => handleLanguageChange(language.code)}
-              className={`block w-full px-4 py-2 text-left text-sm ${
-                i18n.language === language.code
+              href={buildPath(language.code)}
+              className={`block w-full rounded px-4 py-2 text-left text-sm ${
+                currentLang === language.code
                   ? "bg-gray-100 text-gray-900 dark:bg-gray-700 dark:text-white"
                   : "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
               }`}
               role="menuitem"
             >
               {language.name}
-            </button>
+            </Link>
           ))}
         </div>
       </div>

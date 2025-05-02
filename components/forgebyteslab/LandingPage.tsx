@@ -35,7 +35,7 @@ export default function LandingPage() {
       <ClientsSection />
 
       {/* Team Section */}
-      <section className="bg-white py-20 dark:bg-gray-800">
+      <section className="rounded-md bg-white py-20 dark:bg-primary">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">

@@ -19,11 +19,11 @@ export default async function Home({
       resources={resources}
     >
       <main className="flex flex-col items-center px-4">
-        <nav className="dark:bg-secondary fixed top-0 right-0 left-0 z-50 bg-white shadow-sm">
+        <nav className="fixed top-0 right-0 left-0 z-50 bg-white shadow-sm dark:bg-secondary">
           <div className="container mx-auto px-4">
             <div className="flex h-16 items-center justify-between">
               <div className="flex-shrink-0">
-                <span className="text-secondary bg-primary text-xl font-bold dark:text-white">
+                <span className="text-xl font-bold text-secondary dark:text-white">
                   ForgeBytes Lab
                 </span>
               </div>

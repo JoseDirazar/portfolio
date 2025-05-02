@@ -7,11 +7,14 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import clsx from "clsx";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const { t } = useTranslation();
   const { links } = getTranslatedData(t);
-  const [currentHash, setCurrentHash] = useState<string>("");
+  const pathname = usePathname();
+  const [_, currentLang, ...rest] = pathname.split("/");
+  console.log(rest);
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
@@ -24,7 +27,7 @@ export default function Header() {
       />
 
       <nav className="fixed top-[0.15rem] left-1/2 flex h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-3">
           {links.map((link) => (
             <motion.li
               className="relative flex h-3/4 items-center justify-center"
