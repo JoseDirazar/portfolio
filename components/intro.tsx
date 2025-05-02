@@ -22,7 +22,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -41,12 +41,12 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-44 w-44 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-44 w-44 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-4 right-2 text-4xl"
+            className="absolute right-2 bottom-4 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -62,7 +62,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mt-4 mb-10 px-4 text-2xl !leading-[1.5] font-medium sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -81,7 +81,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
+        className="flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -91,28 +91,28 @@ export default function Intro() {
         <div className="flex gap-4">
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white transition outline-none hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
             }}
           >
             {t("navigation.contact")}{" "}
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+            <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
           </Link>
 
           <a
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+            className="group borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 transition outline-none hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
             href="/jose-dirazar-cv.pdf"
             download
           >
             CV{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+            <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
           </a>
         </div>
         <div className="flex gap-4">
           <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/jose-dirazar-a6b927236/"
             target="_blank"
           >
@@ -120,7 +120,7 @@ export default function Intro() {
           </a>
 
           <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
             href="https://github.com/JoseDirazar"
             target="_blank"
           >

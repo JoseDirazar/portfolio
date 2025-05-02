@@ -20,7 +20,7 @@ export default function Experience() {
   const { experiencesData } = getTranslatedData(t);
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-2">
+    <section id="experience" ref={ref} className="mb-28 scroll-mt-28 sm:mb-2">
       <SectionHeading>{t("experience.title", { ns: "data" })}</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -53,14 +53,14 @@ export default function Experience() {
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <p className="!mt-0 font-normal">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
               <a
                 target="_blank"
                 href={item.url}
-                className="!mt-1 flex items-center justify-center gap-2 bg-neutral-700 px-4 py-2 text-sm font-semibold text-gray-300 hover:bg-neutral-400 hover:text-gray-950 dark:bg-white/10 dark:text-white/90 dark:hover:bg-white/20 dark:hover:text-white md:text-base w-fit rounded"
+                className="!mt-1 flex w-fit items-center justify-center gap-2 rounded bg-neutral-700 px-4 py-2 text-sm font-semibold text-gray-300 hover:bg-neutral-400 hover:text-gray-950 md:text-base dark:bg-white/10 dark:text-white/90 dark:hover:bg-white/20 dark:hover:text-white"
               >
                 {t("projects.view", { ns: "data" })} <FaArrowCircleRight />
               </a>

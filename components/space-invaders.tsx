@@ -7,16 +7,16 @@ export default function SpaceInvaders() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center gap-4">
+    <div className="flex h-full w-full flex-col items-center justify-center gap-4">
       <h1 className="text-2xl font-bold">{t("spaceinvaders.title")}</h1>
-      <p className="text-xs opacity-50 text-center">
+      <p className="text-center text-xs opacity-50">
         {t("spaceinvaders.description")}
       </p>
-      <p className="text-sm text-center">{t("spaceinvaders.instructions")}</p>
+      <p className="text-center text-sm">{t("spaceinvaders.instructions")}</p>
       <iframe
         ref={gameRef}
         src="/space-invaders/index.html"
-        className="flex items-center justify-center rounded-md bg-white dark:bg-black w-[530px] h-[530px]"
+        className="flex h-[530px] w-[530px] items-center justify-center rounded-md bg-white dark:bg-black"
       />
     </div>
   );

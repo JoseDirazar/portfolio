@@ -16,7 +16,7 @@ export default function LanguageSwitcher() {
     <div className="flex gap-2">
       <button
         onClick={() => changeLanguage("en")}
-        className={`px-3 py-1 rounded ${
+        className={`rounded px-3 py-1 ${
           i18n.language === "en" ? "bg-blue-500 text-white" : "bg-gray-200"
         }`}
       >
@@ -24,7 +24,7 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => changeLanguage("es")}
-        className={`px-3 py-1 rounded ${
+        className={`rounded px-3 py-1 ${
           i18n.language === "es" ? "bg-blue-500 text-white" : "bg-gray-200"
         }`}
       >

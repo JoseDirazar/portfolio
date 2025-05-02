@@ -90,7 +90,7 @@ export default function SwitchThemeButton({
         <m.path
           variants={shineVariant}
           d={moonPath}
-          className={"absolute top-0 left-0 stroke-blue-100 "}
+          className={"absolute top-0 left-0 stroke-blue-100"}
           initial="hidden"
           animate={resolvedTheme === "dark" ? "visible" : "hidden"}
         />
@@ -99,7 +99,7 @@ export default function SwitchThemeButton({
           variants={raysVariants}
           initial="hidden"
           animate={resolvedTheme === "light" ? "visible" : "hidden"}
-          className="stroke-6 stroke-yellow-600 "
+          className="stroke-yellow-600 stroke-6"
           style={{ strokeLinecap: "round" }}
         >
           <m.path

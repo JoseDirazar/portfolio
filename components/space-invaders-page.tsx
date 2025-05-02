@@ -5,20 +5,20 @@ import SpaceInvaders from "./space-invaders";
 export default function SpaceInvadersPage() {
   return (
     <div className="text-center">
-      <h1 className="text-4xl underline font-sans font-bold tracking-wider -mt-10 mb-10 flex flex-row justify-center align-center gap-x-4">
+      <h1 className="align-center -mt-10 mb-10 flex flex-row justify-center gap-x-4 font-sans text-4xl font-bold tracking-wider underline">
         <BiSolidInvader className="animate-bounce" />
         Space Invaders
         <BiSolidInvader className="animate-bounce" />
       </h1>
       <p>Welcome to my first game developed using</p>
-      <div className="flex flex-row justify-center items-center gap-7 my-5">
+      <div className="my-5 flex flex-row items-center justify-center gap-7">
         <p className="text-xl">
-          <SiBevy className="inline-block mr-2" size={40} />
+          <SiBevy className="mr-2 inline-block" size={40} />
           Bevy
         </p>
         <strong> & </strong>
         <p className="text-xl">
-          <SiRust className="inline-block mr-2" size={40} />
+          <SiRust className="mr-2 inline-block" size={40} />
           Rust
         </p>{" "}
       </div>
