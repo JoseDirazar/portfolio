@@ -5,11 +5,11 @@ import initTranslations from "@/app/i18n";
 const i18nNamespaces = ["common", "data"];
 
 export default async function Home({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  console.log("LOCALE::", locale);
+  const { locale } = await params;
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
@@ -19,7 +19,7 @@ export default async function Home({
       resources={resources}
     >
       <main className={""}>
-        <h1>{t("hero.title")}</h1>
+        {/* <h1>{t("hero.title")}</h1> */}
         <ExampleClientComponent />
       </main>
     </TranslationsProvider>

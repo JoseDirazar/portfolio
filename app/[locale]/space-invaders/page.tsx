@@ -6,10 +6,11 @@ import { i18nNamespaces } from "@/lib/data";
 import initTranslations from "@/app/i18n";
 
 export default async function SpaceInvadersPage({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
   return (

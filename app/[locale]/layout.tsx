@@ -12,15 +12,16 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const { t } = await initTranslations(locale, ["common"]);
 
   return (
-    <html lang={locale} dir={dir(locale)}>
+    <html lang={locale} dir={dir(locale)} suppressHydrationWarning>
       <body className={inter.className}>{children}</body>
     </html>
   );
