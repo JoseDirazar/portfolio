@@ -13,6 +13,7 @@ import {
 } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -41,15 +42,15 @@ const SubDivider = () => {
 
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
-
+  const { t } = useTranslation();
   return (
     <section
       id="skills"
       ref={ref}
       className="mb-28 flex max-w-[53rem] scroll-mt-28 flex-col items-center justify-center text-center sm:mb-2"
     >
-      <SectionHeading>My skills</SectionHeading>
-      <div className="mb-8 text-2xl font-semibold">Languages</div>
+      <SectionHeading>{t("skills.sectionTitle")}</SectionHeading>
+      <div className="mb-8 text-2xl font-semibold">{t("skills.langueges")}</div>
       <ul className="flex max-w-lg flex-wrap justify-center gap-2 text-lg text-gray-800">
         {languajes.map((skill, index) => (
           <motion.li
@@ -69,7 +70,7 @@ export default function Skills() {
         ))}
       </ul>
       <SubDivider />
-      <div className="mb-8 text-2xl font-semibold">Backend</div>
+      <div className="mb-8 text-2xl font-semibold">{t("skills.backend")}</div>
       <ul className="flex max-w-lg flex-wrap justify-center gap-2 text-lg text-gray-800">
         {backendSkills.map((skill, index) => (
           <motion.li
@@ -89,7 +90,7 @@ export default function Skills() {
         ))}
       </ul>
       <SubDivider />
-      <div className="mb-8 text-2xl font-semibold">Frontend</div>
+      <div className="mb-8 text-2xl font-semibold">{t("skills.frontend")}</div>
       <ul className="flex max-w-lg flex-wrap justify-center gap-2 text-lg text-gray-800">
         {frontendSkills.map((skill, index) => (
           <motion.li
@@ -109,7 +110,7 @@ export default function Skills() {
         ))}
       </ul>
       <SubDivider />
-      <div className="mb-8 text-2xl font-semibold">Database</div>
+      <div className="mb-8 text-2xl font-semibold">{t("skills.database")}</div>
       <ul className="flex max-w-lg flex-wrap justify-center gap-2 text-lg text-gray-800">
         {databaseSkills.map((skill, index) => (
           <motion.li
@@ -129,7 +130,7 @@ export default function Skills() {
         ))}
       </ul>
       <SubDivider />
-      <div className="mb-8 text-2xl font-semibold">DevOps</div>
+      <div className="mb-8 text-2xl font-semibold">{t("skills.devops")}</div>
       <ul className="flex max-w-lg flex-wrap justify-center gap-2 text-lg text-gray-800">
         {devOpsSkills.map((skill, index) => (
           <motion.li
@@ -149,7 +150,7 @@ export default function Skills() {
         ))}
       </ul>
       <SubDivider />
-      <div className="mb-8 text-2xl font-semibold">Testing</div>
+      <div className="mb-8 text-2xl font-semibold">{t("skills.testing")}</div>
       <ul className="flex max-w-lg flex-wrap justify-center gap-2 text-lg text-gray-800">
         {testingSkills.map((skill, index) => (
           <motion.li
@@ -169,7 +170,9 @@ export default function Skills() {
         ))}
       </ul>
       <SubDivider />
-      <div className="mb-8 text-2xl font-semibold">Integrations</div>
+      <div className="mb-8 text-2xl font-semibold">
+        {t("skills.integrations")}
+      </div>
       <ul className="flex max-w-lg flex-wrap justify-center gap-2 text-lg text-gray-800">
         {integrationSkills.map((skill, index) => (
           <motion.li

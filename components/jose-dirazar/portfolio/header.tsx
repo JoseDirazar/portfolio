@@ -1,20 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { getTranslatedData } from "@/lib/data";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import clsx from "clsx";
-import { usePathname } from "next/navigation";
 
 export default function Header() {
   const { t } = useTranslation();
   const { links } = getTranslatedData(t);
-  const pathname = usePathname();
-  const [_, currentLang, ...rest] = pathname.split("/");
-  console.log(rest);
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 

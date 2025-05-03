@@ -41,6 +41,11 @@
     "title": "Mis Proyectos",
     "view": "Ver Proyecto"
   },
+  "games": {
+    "title": "Mis Juegos",
+    "view": "Jugar",
+    "link": "Hechale un vistazo a mis juegos!"
+  },
   "contact": {
     "title": "Contáctame",
     "name": "Nombre",
@@ -53,7 +58,8 @@
     "error": "Error al enviar el correo"
   },
   "experience": {
-    "title": "Mi experiencia"
+    "title": "Mi experiencia",
+    "view": "Enlace"
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
@@ -65,5 +71,15 @@
     "description": "¡Este juego fue portado a esta página gracias a WASM!",
     "instructions": "Usa A y D para moverte y espacio para disparar",
     "loading": "Cargando juego..."
+  },
+  "skills": {
+    "sectionTitle": "Mis Habilidades",
+    "langueges": "Lenguajes de programación",
+    "backend": "Tecnologias del lado del servidor",
+    "frontend": "Tecnologias del lado del cliente",
+    "database": "Base de datos",
+    "devops": "Tecnologias para despliegue",
+    "testing": "Technologies de prueba",
+    "integrations": "Integraciones de terceros"
   }
 }

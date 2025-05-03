@@ -62,7 +62,7 @@ export default function Experience() {
                 href={item.url}
                 className="!mt-1 flex w-fit items-center justify-center gap-2 rounded bg-neutral-700 px-4 py-2 text-sm font-semibold text-gray-300 hover:bg-neutral-400 hover:text-gray-950 md:text-base dark:bg-white/10 dark:text-white/90 dark:hover:bg-white/20 dark:hover:text-white"
               >
-                {t("projects.view", { ns: "data" })} <FaArrowCircleRight />
+                {t("experience.view")} <FaArrowCircleRight />
               </a>
             </VerticalTimelineElement>
           </React.Fragment>

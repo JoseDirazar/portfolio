@@ -145,13 +145,7 @@ export const getTranslatedData = (
       imageUrl: deAcaFarmaciasDeTurno,
       url: "https://deaca-farmacias-de-turno.forgebyteslab.com",
     },
-    {
-      title: t("projects.spaceinvaders.title", { ns: "data" }),
-      description: t("projects.spaceinvaders.description", { ns: "data" }),
-      tags: ["Rust", "Bevy", "WASM"],
-      imageUrl: spaceInvaders,
-      url: "/space-invaders",
-    },
+
     {
       title: t("projects.forgebytes.title", { ns: "data" }),
       description: t("projects.forgebytes.description", { ns: "data" }),
@@ -201,7 +195,7 @@ export const getTranslatedData = (
         "Google OAuth",
       ],
       imageUrl: workitfy,
-      url: "https://workitfy.forgebyteslab.com/",
+      url: "https://workitfy.maylandlabs.com/",
     },
     {
       title: t("projects.multicuotas.title", { ns: "data" }),
@@ -232,6 +226,16 @@ export const getTranslatedData = (
       ],
       imageUrl: BelliDeportes,
       url: "https://bellideportes.forgebyteslab.com/",
+    },
+  ],
+
+  gamesData: [
+    {
+      title: t("projects.spaceinvaders.title", { ns: "data" }),
+      description: t("projects.spaceinvaders.description", { ns: "data" }),
+      tags: ["Rust", "Bevy", "WASM"],
+      imageUrl: spaceInvaders,
+      url: "/jose-dirazar/my-games/space-invaders",
     },
   ],
 });

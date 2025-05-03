@@ -41,6 +41,11 @@
     "title": "My Projects",
     "view": "View Project"
   },
+  "games": {
+    "title": "My Games",
+    "view": "Play",
+    "link": "Checkout my games!"
+  },
   "contact": {
     "title": "Get in Touch",
     "name": "Name",
@@ -53,7 +58,8 @@
     "error": "Error sending email"
   },
   "experience": {
-    "title": "My experience"
+    "title": "My experience",
+    "view": "Link"
   },
   "footer": {
     "rights": "All rights reserved.",
@@ -63,7 +69,17 @@
   "spaceinvaders": {
     "title": "Space Invaders Game",
     "description": "This game was ported into this page thanks to WASM!",
-    "instructions": "Use A, D keys to move and space to shoot",
+    "instructions": "Use A and D keys to move and space to shoot",
     "loading": "Loading game..."
+  },
+  "skills": {
+    "sectionTitle": "My Skills",
+    "langueges": "Programming Languages",
+    "backend": "Backend Frameworks",
+    "frontend": "Frontend Frameworks",
+    "database": "Database",
+    "devops": "DevOps Technologies",
+    "testing": "Testing Technologies",
+    "integrations": "Third Party Integrations"
   }
 }
